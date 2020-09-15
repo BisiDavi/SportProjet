@@ -26,6 +26,8 @@
 
   @include('footerlinks')
 
+  @yield('page_footer_link')
+
 </body>
 
 </html>

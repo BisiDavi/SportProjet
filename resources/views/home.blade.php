@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="assets/css/home.css">
   <link rel="stylesheet" href="assets/css/home-slider.css">
   <link rel="stylesheet" href="assets/css/preloader.css">
-  {{--
-  <link rel="stylesheet" href="assets/css/eventslider.css"> --}}
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="assets/css/eventslider.css">
 @endsection
 
 @section('content')
@@ -85,39 +85,39 @@
         </div> --}}
 
         <!-- <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 blogpost">
-                                                        <div class="card shadow-lg p-3 mb-3 bg-white rounded blog-aside">
-                                                          <div class="section-title">
-                                                            <h3 class="text-center">Blog</h3>
-                                                          </div>
-                                                          <div data-aos="fade-up" id="blogcontent"  data-aos-delay="200"  class="row">
-                                                            <div class="d-flex blog-post">
-                                                              <img  class="rounded img-fluid float-left p-3"src="assets/img/Rectangle 21.png"/>
-                                                              <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>
-                                                            </div>
-                                                            <a  href="#"><i class="icofont-arrow-right float-right"></i>Read More</a>
-                                                          </div>
-                                                          <div class="border border-gray m-3"></div>
+                                                            <div class="card shadow-lg p-3 mb-3 bg-white rounded blog-aside">
+                                                              <div class="section-title">
+                                                                <h3 class="text-center">Blog</h3>
+                                                              </div>
+                                                              <div data-aos="fade-up" id="blogcontent"  data-aos-delay="200"  class="row">
+                                                                <div class="d-flex blog-post">
+                                                                  <img  class="rounded img-fluid float-left p-3"src="assets/img/Rectangle 21.png"/>
+                                                                  <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>
+                                                                </div>
+                                                                <a  href="#"><i class="icofont-arrow-right float-right"></i>Read More</a>
+                                                              </div>
+                                                              <div class="border border-gray m-3"></div>
 
-                                                          <div data-aos="fade-up" id="blogcontent" data-aos-delay="300"  class="row d-flex">
-                                                            <div class="d-flex blog-post">
-                                                              <img  class="rounded float-left p-3"src="assets/img/Rectangle 21.png"/>
-                                                              <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>
-                                                            </div>
-                                                            <a  href="#"><i class="icofont-arrow-right float-right"></i>Read More</a>
-                                                          </div>
-                                                          <div class="border border-gray m-3"></div>
+                                                              <div data-aos="fade-up" id="blogcontent" data-aos-delay="300"  class="row d-flex">
+                                                                <div class="d-flex blog-post">
+                                                                  <img  class="rounded float-left p-3"src="assets/img/Rectangle 21.png"/>
+                                                                  <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>
+                                                                </div>
+                                                                <a  href="#"><i class="icofont-arrow-right float-right"></i>Read More</a>
+                                                              </div>
+                                                              <div class="border border-gray m-3"></div>
 
-                                                          <div data-aos="fade-up" id="blogcontent" data-aos-delay="400"  class="row d-flex post-3">
-                                                            <div class="d-flex blog-post">
-                                                              <img  class="rounded float-left p-3"src="assets/img/Rectangle 21.png"/>
-                                                              <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>
+                                                              <div data-aos="fade-up" id="blogcontent" data-aos-delay="400"  class="row d-flex post-3">
+                                                                <div class="d-flex blog-post">
+                                                                  <img  class="rounded float-left p-3"src="assets/img/Rectangle 21.png"/>
+                                                                  <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports college for boys and girls. It combines education with sports along with a special focus on football development</p>
+                                                                </div>
+                                                                <a  href="#"><i class="icofont-arrow-right float-right"></i>Read More</a>
+                                                              </div>
                                                             </div>
-                                                            <a  href="#"><i class="icofont-arrow-right float-right"></i>Read More</a>
                                                           </div>
                                                         </div>
-                                                      </div>
-                                                    </div>
-                                               -->
+                                                   -->
         <!-- ======= Services Section ======= -->
         <section id="services" class="services section-bg">
           <div class="container">
@@ -284,4 +284,18 @@
         </section>
         <!-- End Clients Section -->
       </div>
+    @endsection
+
+    @section('page_footer_link')
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $('.autoplay').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+          });
+        });
+
+      </script>
     @endsection
