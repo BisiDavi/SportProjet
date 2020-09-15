@@ -3,7 +3,7 @@
 
 <head>
   <!-- include link page -->
-  @include('headlinks')
+  @include('headerlinks')
   @yield('link')
 </head>
 
