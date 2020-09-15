@@ -14,9 +14,10 @@ use TCG\Voyager\Facades\Voyager;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'HomeController@index');
+
+Route::get('/about', 'AboutController@index');
+
 
 
 Route::group(['prefix' => 'admin'], function () {
