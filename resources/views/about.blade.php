@@ -11,7 +11,7 @@
 
     <div class="row about-banner">
       <img src="{{ asset('assets/img/banner.png') }}" class="top-banner" alt="banner" style="width:100%">
-      <h3>ABOUT De Skyballers</h3>
+      <h3 class="text-center">About De Skyballers</h3>
     </div>
 
     <div class="container-fluid">
