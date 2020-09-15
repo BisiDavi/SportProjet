@@ -4,6 +4,7 @@
 <head>
   <!-- include link page -->
   @include('headerlinks')
+
   @yield('link')
 </head>
 
@@ -22,7 +23,6 @@
     <i class="icofont-simple-up"></i>
   </a>
 
-  @yield('slickjs')
 
   @include('footerlinks')
 

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Contact;
+use App\UserContact;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -21,7 +21,7 @@ class ContactController extends Controller
             'message' => 'required'
         ]);
 
-        Contact::create($data);
+        UserContact::create($data);
         
         return redirect('contact')->with('message', 
         'Thanks for making enquires, we will reach you shortly');
