@@ -4,9 +4,9 @@ use Illuminate\Support\Str;
 
 $url = getenv("CLEARDB_DATABASE_URL");
 $host = "us-cdbr-east-02.cleardb.com";
-$username = "bd42dbe9974b4b";
-$password = "ccb85346";
-$database = "heroku_00c0397e1cc7583";
+$username = "b90093eddaaa1a";
+$password = "a8c9fd4b";
+$database = "heroku_b75eee1d8d374a9";
 
 return [
 

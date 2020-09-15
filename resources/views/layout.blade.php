@@ -22,6 +22,8 @@
     <i class="icofont-simple-up"></i>
   </a>
 
+  @yield('slickjs')
+
   @include('footerlinks')
 
 </body>
