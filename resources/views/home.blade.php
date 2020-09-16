@@ -325,17 +325,3 @@
   <!-- End Clients Section -->
   </div>
 @endsection
-
-{{-- @section('page_footer_link')
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('.autoplay').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2000,
-    });
-  });
-
-</script> --}}
-{{-- @endsection --}}

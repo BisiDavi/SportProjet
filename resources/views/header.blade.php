@@ -5,7 +5,8 @@
           class="img-fluid mr-2 banner-home"></a>
       <h1 class="text-light">
         <a href="/">
-          {{ setting('site.title') }}
+          {{-- {{ setting('site.title') }} --}}
+          De Skyballers
         </a>
       </h1>
       <!-- Uncomment below if you prefer to use an image logo -->
