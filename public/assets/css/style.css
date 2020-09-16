@@ -329,11 +329,18 @@ a i.icofont-arrow-right.float-right {
 }
 
 .services .read-more a {
-    color: #777777;
+    color: red;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 12px;
+    font-size: .7rem;
     transition: 0.3s;
+}
+
+.owl-carousel.clients-carousel.owl-loaded.owl-drag.aos-init.aos-animate img {
+    height: 120px;
+}
+.owl-carousel.clients-carousel.owl-loaded.owl-drag.aos-init.aos-animate {
+    margin-top: -40px;
 }
 
 .services .read-more a:hover {

@@ -18,14 +18,28 @@
 }
 
 @media (max-width:400px){
-.row.servicesrow .card-body {
-    height: auto;
-    margin-top: -40px;
-    margin-left: -15px !important;
+.row.servicesrow .card-body {    
+height: auto;
+margin-top: -40px;
+margin-left: -15px !important;
+width: 260px;
+padding: 20px;
     }
+.row.servicesrow .card-text {  
+    font-size: .81rem;
 }
 
-@media (max-width:500px){
+.services .read-more a {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .7rem;
+    transition: 0.3s;
+    color: red;
+}
+
+}
+
+@media (min-width:405px) and (max-width:500px){
     .row.servicesrow .card-body {
     margin-left: 0px !important;
     }
