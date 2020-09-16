@@ -151,7 +151,7 @@ margin-top: -20px;
 	 color: var(--color1);
 }
 
-@media all and (max-wdith:767px){
+@media all and (max-width:767px){
 	.eventslider .slides .content {
     background-color: rgba(12, 12, 12, 0.7);
     padding: 1.5rem 1rem;

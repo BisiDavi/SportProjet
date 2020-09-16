@@ -282,6 +282,12 @@ a i.icofont-arrow-right.float-right {
     padding-bottom: 40px;
 }
 
+@media all and (max-width:700px){
+   .services .card {
+    margin-bottom: 20px !important;
+   } 
+}
+
 .services .card {
     border: 0;
     padding: 0 30px;
@@ -322,6 +328,7 @@ a i.icofont-arrow-right.float-right {
 .services .card-title a {
     color: #213b52;
     transition: 0.3s;
+    font-size: 1rem;
 }
 
 .services .card-text {
@@ -338,6 +345,7 @@ a i.icofont-arrow-right.float-right {
 
 .owl-carousel.clients-carousel.owl-loaded.owl-drag.aos-init.aos-animate img {
     height: 120px;
+    width:100%;
 }
 .owl-carousel.clients-carousel.owl-loaded.owl-drag.aos-init.aos-animate {
     margin-top: -40px;

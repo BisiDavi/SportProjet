@@ -17,12 +17,12 @@
     margin-left: -15px !important;
 }
 
-@media (max-width:400px){
+@media (min-width:360px) and (max-width:400px){
 .row.servicesrow .card-body {    
 height: auto;
 margin-top: -40px;
 margin-left: -15px !important;
-width: 260px;
+width: 300px;
 padding: 20px;
     }
 .row.servicesrow .card-text {  
@@ -43,6 +43,12 @@ padding: 20px;
     .row.servicesrow .card-body {
     margin-left: 0px !important;
     }
+}
+
+@media screen and (max-width: 350px) {
+.row.servicesrow .card-body{
+    width: 260px;
+}
 }
 
 @media screen and (min-width: 900px) {
@@ -123,10 +129,14 @@ padding: 20px;
 
     .academy-text .btn {
         margin-left: 22%;
+        padding: 0 12px;
+        margin-top: -25px;
     }
 
     .academy-text p {
         margin-left: 25%;
+        font-size: .8rem;
+        margin-top: -5px;
     }
 
     .academy-text h1 {
