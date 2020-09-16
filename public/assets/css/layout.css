@@ -59,7 +59,16 @@ form .btn-primary{
     }
 
     .container-fluid .top-banner{
-        margin-top: 20%;
+        margin-top: 5%;
+    margin-bottom: -15px;
+    height: 150px;
     }
 
+    .top-banner h3 {
+    position: absolute;
+    color: white;
+    margin-top: 22%;
+    align-items: center;    
+    margin-left: 40%;
+    }
 }

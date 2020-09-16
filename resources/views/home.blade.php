@@ -120,14 +120,14 @@
       {{-- <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 blogpost">
         <div class="card shadow-lg p-3 mb-3 bg-white rounded blog-aside">
           {{--
-                    <div class="section-title">
-                      <h3 class="text-center">Blog</h3>
-                    </div>
-                    <div style="display:grid; grid-template-rows:repeat(4,1fr)" class="blogcontainer">
-                      @foreach ($threePost as $post)
-                        <div id="blogcontent" class="row">
-                          <div class="blog-post">
-                            <a href="/{{ $post->slug }}">
+                      <div class="section-title">
+                        <h3 class="text-center">Blog</h3>
+                      </div>
+                      <div style="display:grid; grid-template-rows:repeat(4,1fr)" class="blogcontainer">
+                        @foreach ($threePost as $post)
+                          <div id="blogcontent" class="row">
+                            <div class="blog-post">
+                              <a href="/{{ $post->slug }}">
           <img class="rounded img-fluid float-left p-3" src="{{ Voyager::image($post->image) }}"
             style="width:400px;height:300px">
           <span>
@@ -151,8 +151,8 @@
   <section id="services" class="services section-bg">
     <div class="container">
       <div class="section-title">
-        <h3  class="text-center m-3 p-2">Services</h3>
-        <h4  class="text-center">CONSULTANCY SERVICES</h4>
+        <h3 class="text-center m-3 p-2">Services</h3>
+        <h4 class="text-center">CONSULTANCY SERVICES</h4>
         <p class="text-center">We offer all round consultancy services in sports and sports related matters.
         </p>
       </div>
@@ -312,13 +312,11 @@
         <h3 class="text-center mb-5 p-2">Partners</h3>
       </div>
       <div class="owl-carousel clients-carousel" data-aos="fade-up" data-aos-delay="100">
-        <img src="{{ asset('assets/img/fifa.png') }}" alt="">
-        <img src="{{ asset('assets/img/lagos') }}" alt="">
-        <img src="{{ asset('assets/img/fifa.png') }}" alt="">
-        <img src="{{ asset('assets/img/lagos.png') }}" alt="">
-        <img src="{{ asset('assets/img/fifa.png') }}" alt="">
-        <img src="{{ asset('assets/img/lagos.png') }}" alt="">
-        <img src="{{ asset('assets/img/fifa.png') }}" alt="">
+        <img width="100px" src="{{ asset('assets/img/fifa.png') }}" alt="">
+        <img width="100px" src="{{ asset('assets/img/lagos') }}" alt="">
+        <img width="100px" src="{{ asset('assets/img/fifa.png') }}" alt="">
+        <img width="100px" src="{{ asset('assets/img/lagos.png') }}" alt="">
+        <img width="100px" src="{{ asset('assets/img/fifa.png') }}" alt="">
       </div>
     </div>
   </section>

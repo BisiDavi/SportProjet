@@ -2,6 +2,10 @@
 
 @section('title', 'Contact us')
 
+@section('link')
+  <link rel="stylesheet" href="assets/css/contact.css">
+@endsection
+
 
 @section('content')
 
@@ -14,7 +18,7 @@
 
   <div class="container">
     <div class="form-title">
-      <h1 class="mt-3 mb-3">Contact</h1>
+      <h1 class="mt-3 mb-3 	d-none d-lg-block d-xl-none">Contact</h1>
       <p>Please fill in the information below, make sure all information given are very accurate.</p>
       <h3>Personal Information</h3>
     </div>

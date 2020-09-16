@@ -157,3 +157,10 @@ figure {
     text-decoration: none;
     height: auto;
 }
+
+@media (max-width:768px){
+    .gallery{
+        display:grid;
+        margin-bottom: 20px;
+    }
+}

@@ -15,3 +15,24 @@
     margin-left: 40%;
 
 }
+
+@media (max-width:768px){
+    .about-banner h3 {
+    position: absolute;
+    color: white;
+    margin-top: 25%;
+    text-align: center !important;
+    font-size: 20px;
+    margin-left: 30%;
+}
+}
+
+.accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+}
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f067"; 
+}
