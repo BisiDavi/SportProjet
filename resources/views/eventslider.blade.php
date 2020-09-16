@@ -1,5 +1,5 @@
 <div class="eventslidercontainer">
-  <div class="slider">
+  <div class="eventslider">
     <input type="radio" name="slideSelectors" id="sl1" class="selectors" checked>
     <div class="slide1 slides">
       <div class="content">

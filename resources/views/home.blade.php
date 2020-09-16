@@ -76,7 +76,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 blogpost">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 blogpost d-none .d-sm-block d-sm-none d-md-block">
         <div class="card shadow-lg p-3 mb-3 bg-white rounded blog-aside">
           <div class="section-title">
             <h3 class="text-center">Blog</h3>
@@ -151,9 +151,9 @@
   <section id="services" class="services section-bg">
     <div class="container">
       <div class="section-title">
-        <h3 data-aos="fade-in" class="text-center m-3 p-2">Services</h3>
-        <h4 data-aos="fade-in" class="text-center">CONSULTANCY SERVICES</h4>
-        <p data-aos="fade-in">We offer all round consultancy services in sports and sports related matters.
+        <h3  class="text-center m-3 p-2">Services</h3>
+        <h4  class="text-center">CONSULTANCY SERVICES</h4>
+        <p class="text-center">We offer all round consultancy services in sports and sports related matters.
         </p>
       </div>
 

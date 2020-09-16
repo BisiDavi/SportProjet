@@ -798,6 +798,7 @@ textarea .message-textarea .form-control {
     position: absolute;
     right: 20px;
     margin: 0;
+    top:550px;
     padding: 0;
 }
 
@@ -809,4 +810,14 @@ textarea .message-textarea .form-control {
     padding: 10px;
     font-size: 17px;
     left: 30%;
+}
+
+@media (max-width: 500px) {
+    section#services{
+        margin-top: -120%;
+    }
+    .row.servicesrow.card-body{
+        margin: 0 !important;
+    }
+
 }

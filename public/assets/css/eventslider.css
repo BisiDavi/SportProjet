@@ -28,7 +28,7 @@
 	 background-color: var(--color2);
 	 overflow-x: hidden; */
 }
- body .eventslidercontainer .slider {
+ body .eventslidercontainer .eventslider {
 	 position: relative;
 	 margin: auto;
 	 border: 2px solid transparent;
@@ -39,7 +39,7 @@
 	 overflow: hidden;
 }
  @media all and (max-width: 640px) {
-	 body .eventslidercontainer .slider {
+	 body .eventslidercontainer .eventslider {
 		 width: 100%;
 		 height: 100%;
 		 border: 0;
@@ -47,21 +47,21 @@
 	}
 }
  @media all and (min-width: 641px) {
-	 body .eventslidercontainer .slider {
+	 body .eventslidercontainer .eventslider {
 		 width: 90%;
 		 height: 80%;
 	}
 }
  @media all and (min-width: 1000px) {
-	 body .eventslidercontainer .slider {
+	 body .eventslidercontainer .eventslider {
 		 width: 80%;
 		 height: 75%;
 	}
 }
- body .eventslidercontainer .slider .selectors {
+ body .eventslidercontainer .eventslider .selectors {
 	 display: none;
 }
- body .eventslidercontainer .slider .slides {
+ body .eventslidercontainer .eventslider .slides {
 	 position: absolute;
 	 z-index: -1;
 	 width: 100%;
@@ -75,12 +75,12 @@
 	 transition: all 1000ms ease-in;
 }
  @media all and (max-width: 640px) {
-	 body .eventslidercontainer .slider .slides {
+	 body .eventslidercontainer .eventslider .slides {
 		 padding: 10% 9%;
 		 border-radius: 0;
 	}
 }
- body .eventslidercontainer .slider .slides .content {
+ body .eventslidercontainer .eventslider .slides .content {
 	 background-color: rgba(12, 12, 12, 0.7);
 	 padding: 1.5rem 1rem;
 	 display: flex;
@@ -94,17 +94,17 @@
 	 transition: all 600ms ease-out 1000ms;
 }
  @media all and (max-width: 640px) {
-	 body .eventslidercontainer .slider .slides .content {
+	 body .eventslidercontainer .eventslider .slides .content {
 		 padding: 1.25rem 0.75rem;
 	}
 }
- body .eventslidercontainer .slider .slides .content h1 {
+ body .eventslidercontainer .eventslider .slides .content h1 {
 	 align-self: flex-start;
 	 font-family: "Trade Winds", cursive;
 	 margin-bottom: 1.25rem;
 	 text-shadow: 4px 4px 3px var(--color2);
 }
- body .eventslidercontainer .slider .slides .content h2 {
+ body .eventslidercontainer .eventslider .slides .content h2 {
 	 align-self: flex-start;
 	 font-weight: 600;
 	 margin-bottom: 1rem;
@@ -112,11 +112,11 @@
 	 border-bottom: 3px var(--color3) solid;
 	 border-radius: 0 0 5px 5px;
 }
- body .eventslidercontainer .slider .slides .content p {
+ body .eventslidercontainer .eventslider .slides .content p {
 	 line-height: 1.5rem;
 	 margin-bottom: 1.5rem;
 }
- body .eventslidercontainer .slider .slides .content .btns {
+ body .eventslidercontainer .eventslider .slides .content .btns {
 	 padding: 0.5rem 1rem;
 	 border: none;
 	 border-radius: 15px;
@@ -126,14 +126,14 @@
 	 transition: all 500ms;
 	 cursor: pointer;
 }
- body .eventslidercontainer .slider .slides .content .btns:hover {
+ body .eventslidercontainer .eventslider .slides .content .btns:hover {
 	 background-color: #000;
 	 color: var(--color1);
 }
- body .eventslidercontainer .slider .slides .content .btns:active {
+ body .eventslidercontainer .eventslider .slides .content .btns:active {
 	 transform: translateY(7px);
 }
- body .eventslidercontainer .slider .slides .prev, body .eventslidercontainer .slider .slides .next {
+ body .eventslidercontainer .eventslider .slides .prev, body .eventslidercontainer .eventslider .slides .next {
 	 position: absolute;
 	 top: 50%;
 	 transform: translateY(-50%);
@@ -145,43 +145,43 @@
 	 z-index: 10;
 }
  @media all and (max-width: 640px) {
-	 body .eventslidercontainer .slider .slides .prev, body .eventslidercontainer .slider .slides .next {
+	 body .eventslidercontainer .eventslider .slides .prev, body .eventslidercontainer .eventslider .slides .next {
 		 width: 24px;
 		 height: 24px;
 	}
 }
- body .eventslidercontainer .slider .slides .prev {
+ body .eventslidercontainer .eventslider .slides .prev {
 	 left: 3%;
 	 transform: rotate(45deg);
 }
- body .eventslidercontainer .slider .slides .next {
+ body .eventslidercontainer .eventslider .slides .next {
 	 right: 3%;
 	 transform: rotate(-135deg);
 }
- body .eventslidercontainer .slider .slides .prev:active, body .eventslidercontainer .slider .slides .next:active {
+ body .eventslidercontainer .eventslider .slides .prev:active, body .eventslidercontainer .eventslider .slides .next:active {
 	 box-shadow: -3px 3px var(--color3);
 }
- body .eventslidercontainer .slider .slide1 {
+ body .eventslidercontainer .eventslider .slide1 {
 	 background: center no-repeat url("../img/training.jpg");
 	 background-size: cover;
 }
- body .eventslidercontainer .slider .slide2 {
+ body .eventslidercontainer .eventslider .slide2 {
 	 background: bottom no-repeat url("../img/upcoming_event.jpg");
 	 background-size: cover;
 }
- body .eventslidercontainer .slider .slide3 {
+ body .eventslidercontainer .eventslider .slide3 {
 	 background: center no-repeat url("../img/malefitness.jpg");
 	 background-size: cover;
 }
- /* body .eventslidercontainer .slider .slide4 {
+ /* body .eventslidercontainer .eventslider .slide4 {
 	 background: center no-repeat url("https://unsplash.com/photos/uc9GjDHj1yA/download?force=true&w=2400");
 	 background-size: cover;
 }
- body .eventslidercontainer .slider .slide5 {
+ body .eventslidercontainer .eventslider .slide5 {
 	 background: bottom no-repeat url("https://unsplash.com/photos/8qCtP97jgoE/download?force=true&w=1920");
 	 background-size: cover;
 } */
- body .eventslidercontainer .slider .eventnav {
+ body .eventslidercontainer .eventslider .eventnav {
 	 position: absolute;
 	 bottom: 3%;
 	 width: 100%;
@@ -190,7 +190,7 @@
 	 justify-content: center;
 	 z-index: 10;
 }
- body .eventslidercontainer .slider .eventnav .dots {
+ body .eventslidercontainer .eventslider .eventnav .dots {
 	 display: block;
 	 width: 25px;
 	 height: 12px;
@@ -200,18 +200,18 @@
 	 transition: all 150ms ease-in-out;
 	 cursor: pointer;
 }
- body .eventslidercontainer .slider .eventnav .dots:active {
+ body .eventslidercontainer .eventslider .eventnav .dots:active {
 	 transform: scale(1.2);
 }
- body .eventslidercontainer .slider .selectors:checked + .slides {
+ body .eventslidercontainer .eventslider .selectors:checked + .slides {
 	 z-index: 5;
 	 opacity: 1;
 }
- body .eventslidercontainer .slider .selectors:checked + .slides .content {
+ body .eventslidercontainer .eventslider .selectors:checked + .slides .content {
 	 transform: translateY(0%);
 	 opacity: 1;
 }
- body .eventslidercontainer .slider #sl1:checked ~ .eventnav .dot1, body .eventslidercontainer .slider #sl2:checked ~ .eventnav .dot2, body .eventslidercontainer .slider #sl3:checked ~ .eventnav .dot3, body .eventslidercontainer .slider #sl4:checked ~ .eventnav .dot4, body .eventslidercontainer .slider #sl5:checked ~ .eventnav .dot5 {
+ body .eventslidercontainer .eventslider #sl1:checked ~ .eventnav .dot1, body .eventslidercontainer .eventslider #sl2:checked ~ .eventnav .dot2, body .eventslidercontainer .eventslider #sl3:checked ~ .eventnav .dot3, body .eventslidercontainer .eventslider #sl4:checked ~ .eventnav .dot4, body .eventslidercontainer .eventslider #sl5:checked ~ .eventnav .dot5 {
 	 background-color: var(--color3);
 	 transform: scale(1.1);
 }
@@ -228,3 +228,8 @@
 	}
 }
  
+@media (max-width: 500px) {
+	.eventslider{
+		height:50;
+	}
+}
