@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Trade+Winds&display=swap");
+ :root {
+	 --color1: floralwhite;
+	 --color2: #0c0c0c;
+	 --color3: #ff004c;
+}
+ * {
+	 margin: 0;
+	 padding: 0;
+	 box-sizing: border-box;
+	 outline: none;
+}
+ /* body {
+	 width: 100%;
+	 background-color: var(--color2);
+	 overflow-x: hidden;
+} */
+ body .eventslidercontainer {
+	 width: 100%;
+	 height: 100vh;
+	 /* min-width: 360px;
+	 min-height: 480px;
+	 margin: auto;
+	 display: flex;
+   flex-direction: column;
+   
+   width: 100%;
+	 background-color: var(--color2);
+	 overflow-x: hidden; */
+}
+ body .eventslidercontainer .slider {
+	 position: relative;
+	 margin: auto;
+	 border: 2px solid transparent;
+	 border-radius: 10px;
+	 background-color: var(--color2);
+	 opacity: 0;
+	 animation: fadeIn 2000ms ease-in-out 1500ms forwards;
+	 overflow: hidden;
+}
+ @media all and (max-width: 640px) {
+	 body .eventslidercontainer .slider {
+		 width: 100%;
+		 height: 100%;
+		 border: 0;
+		 border-radius: 0;
+	}
+}
+ @media all and (min-width: 641px) {
+	 body .eventslidercontainer .slider {
+		 width: 90%;
+		 height: 80%;
+	}
+}
+ @media all and (min-width: 1000px) {
+	 body .eventslidercontainer .slider {
+		 width: 80%;
+		 height: 75%;
+	}
+}
+ body .eventslidercontainer .slider .selectors {
+	 display: none;
+}
+ body .eventslidercontainer .slider .slides {
+	 position: absolute;
+	 z-index: -1;
+	 width: 100%;
+	 height: 100%;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 border-radius: 10px;
+	 padding: 10% 12%;
+	 opacity: 0;
+	 transition: all 1000ms ease-in;
+}
+ @media all and (max-width: 640px) {
+	 body .eventslidercontainer .slider .slides {
+		 padding: 10% 9%;
+		 border-radius: 0;
+	}
+}
+ body .eventslidercontainer .slider .slides .content {
+	 background-color: rgba(12, 12, 12, 0.7);
+	 padding: 1.5rem 1rem;
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+	 font-family: "Poppins", sans-serif;
+	 border-radius: 15px;
+	 color: var(--color1);
+	 transform: translateY(-500%);
+	 opacity: 0;
+	 transition: all 600ms ease-out 1000ms;
+}
+ @media all and (max-width: 640px) {
+	 body .eventslidercontainer .slider .slides .content {
+		 padding: 1.25rem 0.75rem;
+	}
+}
+ body .eventslidercontainer .slider .slides .content h1 {
+	 align-self: flex-start;
+	 font-family: "Trade Winds", cursive;
+	 margin-bottom: 1.25rem;
+	 text-shadow: 4px 4px 3px var(--color2);
+}
+ body .eventslidercontainer .slider .slides .content h2 {
+	 align-self: flex-start;
+	 font-weight: 600;
+	 margin-bottom: 1rem;
+	 padding-bottom: 0.25rem;
+	 border-bottom: 3px var(--color3) solid;
+	 border-radius: 0 0 5px 5px;
+}
+ body .eventslidercontainer .slider .slides .content p {
+	 line-height: 1.5rem;
+	 margin-bottom: 1.5rem;
+}
+ body .eventslidercontainer .slider .slides .content .btns {
+	 padding: 0.5rem 1rem;
+	 border: none;
+	 border-radius: 15px;
+	 background-color: var(--color3);
+	 color: var(--color2);
+	 font-weight: 600;
+	 transition: all 500ms;
+	 cursor: pointer;
+}
+ body .eventslidercontainer .slider .slides .content .btns:hover {
+	 background-color: #000;
+	 color: var(--color1);
+}
+ body .eventslidercontainer .slider .slides .content .btns:active {
+	 transform: translateY(7px);
+}
+ body .eventslidercontainer .slider .slides .prev, body .eventslidercontainer .slider .slides .next {
+	 position: absolute;
+	 top: 50%;
+	 transform: translateY(-50%);
+	 width: 32px;
+	 height: 32px;
+	 box-shadow: -3px 3px var(--color1);
+	 transition: all 150ms ease-in-out;
+	 cursor: pointer;
+	 z-index: 10;
+}
+ @media all and (max-width: 640px) {
+	 body .eventslidercontainer .slider .slides .prev, body .eventslidercontainer .slider .slides .next {
+		 width: 24px;
+		 height: 24px;
+	}
+}
+ body .eventslidercontainer .slider .slides .prev {
+	 left: 3%;
+	 transform: rotate(45deg);
+}
+ body .eventslidercontainer .slider .slides .next {
+	 right: 3%;
+	 transform: rotate(-135deg);
+}
+ body .eventslidercontainer .slider .slides .prev:active, body .eventslidercontainer .slider .slides .next:active {
+	 box-shadow: -3px 3px var(--color3);
+}
+ body .eventslidercontainer .slider .slide1 {
+	 background: center no-repeat url("../img/training.jpg");
+	 background-size: cover;
+}
+ body .eventslidercontainer .slider .slide2 {
+	 background: bottom no-repeat url("../img/upcoming_event.jpg");
+	 background-size: cover;
+}
+ body .eventslidercontainer .slider .slide3 {
+	 background: center no-repeat url("../img/malefitness.jpg");
+	 background-size: cover;
+}
+ /* body .eventslidercontainer .slider .slide4 {
+	 background: center no-repeat url("https://unsplash.com/photos/uc9GjDHj1yA/download?force=true&w=2400");
+	 background-size: cover;
+}
+ body .eventslidercontainer .slider .slide5 {
+	 background: bottom no-repeat url("https://unsplash.com/photos/8qCtP97jgoE/download?force=true&w=1920");
+	 background-size: cover;
+} */
+ body .eventslidercontainer .slider .eventnav {
+	 position: absolute;
+	 bottom: 3%;
+	 width: 100%;
+	 text-align: center;
+	 display: flex;
+	 justify-content: center;
+	 z-index: 10;
+}
+ body .eventslidercontainer .slider .eventnav .dots {
+	 display: block;
+	 width: 25px;
+	 height: 12px;
+	 background-color: var(--color1);
+	 border-radius: 10px;
+	 margin: 0 5px;
+	 transition: all 150ms ease-in-out;
+	 cursor: pointer;
+}
+ body .eventslidercontainer .slider .eventnav .dots:active {
+	 transform: scale(1.2);
+}
+ body .eventslidercontainer .slider .selectors:checked + .slides {
+	 z-index: 5;
+	 opacity: 1;
+}
+ body .eventslidercontainer .slider .selectors:checked + .slides .content {
+	 transform: translateY(0%);
+	 opacity: 1;
+}
+ body .eventslidercontainer .slider #sl1:checked ~ .eventnav .dot1, body .eventslidercontainer .slider #sl2:checked ~ .eventnav .dot2, body .eventslidercontainer .slider #sl3:checked ~ .eventnav .dot3, body .eventslidercontainer .slider #sl4:checked ~ .eventnav .dot4, body .eventslidercontainer .slider #sl5:checked ~ .eventnav .dot5 {
+	 background-color: var(--color3);
+	 transform: scale(1.1);
+}
+ @keyframes fadeIn {
+	 0% {
+		 opacity: 0;
+	}
+	 50% {
+		 opacity: 1;
+	}
+	 100% {
+		 opacity: 1;
+		 background-color: #c0c0c0;
+	}
+}
+ 

@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 d-sm-none d-sm-block d-xs-none d-xs-block footer-contact"
-            data-aos="fade-up" data-aos-delay="100">
+           >
             <div class="logo-bottom mr-auto d-flex mb-2 mt-2">
               <a href="/"><img src="{{ asset('assets/img/logo.jpg') }}" alt="logo" class="img-fluid mr-2"></a>
               <h1><a class="site-title" href="/">{{ setting('site.title') }}</a></h1>
@@ -19,8 +19,7 @@
               We operates with progressive, modern standard and sustainable policies.
             </p>
           </div>
-          <div class="col-lg-4 col-md-4ssssssss col-sm-4 col-xs-4 d-none d-sm-block footer-links" data-aos="fade-up"
-            data-aos-delay="200">
+          <div class="col-lg-4 col-md-4ssssssss col-sm-4 col-xs-4 d-none d-sm-block footer-links" >
             <h1 class="ml-5">Additional Link</h1>
             <ul>
               <li><a href="#location">Our Location</a></li>
@@ -29,7 +28,7 @@
               <li><a href="#Benefits">Benefits</a></li>
             </ul>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 footer-links" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 footer-links">
             @if (session()->has('message'))
               <div class="alert alert-success">
                 <strong>Success</strong>

@@ -11,6 +11,12 @@
     margin-left: 5%;
 }
 
+.row.servicesrow .card-body {
+    height: 320px;
+    width: 320px;
+    margin-left: -15px !important;
+}
+
 @media screen and (min-width: 900px) {
     .volleyball {
         position: absolute;
