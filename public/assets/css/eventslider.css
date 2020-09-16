@@ -41,7 +41,7 @@
  @media all and (max-width: 640px) {
 	 body .eventslidercontainer .eventslider {
 		 width: 100%;
-		 height: 100%;
+		 height: 50%;
 		 border: 0;
 		 border-radius: 0;
 	}
@@ -96,6 +96,7 @@
  @media all and (max-width: 640px) {
 	 body .eventslidercontainer .eventslider .slides .content {
 		 padding: 1.25rem 0.75rem;
+		 height:90%;
 	}
 }
  body .eventslidercontainer .eventslider .slides .content h1 {
@@ -230,6 +231,6 @@
  
 @media (max-width: 500px) {
 	.eventslider{
-		height:50;
+		height:50%;
 	}
 }
