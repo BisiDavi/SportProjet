@@ -17,6 +17,14 @@
     margin-left: -15px !important;
 }
 
+@media (max-width:400px){
+.row.servicesrow .card-body {
+    height: auto;
+    margin-top: -40px;
+    margin-left: -15px !important;
+    }
+}
+
 @media (max-width:500px){
     .row.servicesrow .card-body {
     margin-left: 0px !important;

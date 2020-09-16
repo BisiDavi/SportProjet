@@ -3,11 +3,9 @@
     <input type="radio" name="slideSelectors" id="sl1" class="selectors" checked>
     <div class="slide1 slides">
       <div class="content">
-        <h1>Kaghan Valley, Pakistan</h1>
-        <h2>Dudipatsar Lake</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci perferendis, sit
-          iste pariatur dolores. Alias quibusdam voluptatem accusamus tempore
-          a! Distinctio tempora sed nihil praesentium, Ozark ala adipisicing elit.</p>
+        <h1>Body Goals</h1>
+        <h2>November 10</h2>
+        <p>Dont miss it.</p>
         <button class="btns">Explore</button>
       </div>
       <label for="sl5" class="prev"></label>
@@ -16,11 +14,9 @@
     <input type="radio" name="slideSelectors" id="sl2" class="selectors">
     <div class="slide2 slides">
       <div class="content">
-        <h1>Deosai Nat Park, Pakistan</h1>
-        <h2>Sheosar Lake</h2>
-        <p>Necessitatibus possimus, voluptates neque quos dolores unde explicabo voluptatibus illo enim
-          expedita, accusantium maiores dolorem aperiam
-          quam veritatis at aspernatur totam! Illum, tenetur magni consectetur aut minus ullam ipsum sint.</p>
+        <h1>Endurance Jogging</h1>
+        <h2>Upcoming</h2>
+        <p>Watch out!</p>
         <button class="btns">Explore</button>
       </div>
       <label for="sl1" class="prev"></label>
@@ -29,11 +25,9 @@
     <input type="radio" name="slideSelectors" id="sl3" class="selectors">
     <div class="slide3 slides">
       <div class="content">
-        <h1>Swat Valley, Pakistan</h1>
-        <h2>Malam Jabba</h2>
-        <p>Vel aliquam reprehenderit ipsa, aperiam nesciunt dolores blanditiis tempore numquam. Quas vel
-          cupiditate repellat obcaecati quo eos illum distinctio, reprehenderit nulla, quibusdam assumenda
-          temporibus nemo omnis excepturi ad esse.</p>
+        <h1>Body Building</h1>
+        <h2>Upcoming</h2>
+        <p>Watch out</p>
         <button class="btns">Explore</button>
       </div>
       <label for="sl2" class="prev"></label>
@@ -76,26 +70,3 @@
     </div>
   </div>
 </div>
-
-
-{{--
-<div class="autoplay">
-  <div class="d-block">
-    <img src="assets/img/training.jpg" alt="">
-    <p class="d-block">
-      <strong class="text-center">Date: November 10</strong>
-    </p>
-  </div>
-  <div class="d-block">
-    <img src="assets/img/upcoming_event.jpg" alt="">
-    <p class="d-block">
-      <strong class="text-center">Date: Upcoming</strong>
-    </p>
-  </div>
-  <div class="d-block">
-    <img src="assets/img/malefitness.jpg" alt="">
-    <p class="d-block">
-      <strong class="text-center">Date: Upcoming</strong>
-    </p>
-  </div>
-</div> --}}
