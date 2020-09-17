@@ -23,27 +23,30 @@
           </div>
         @endif
 
-        <form action="create-post" method="POST" role="form">
+        <form action="create-post" method="POST" role="form" enctype="multipart/form-data">
           <div class="card-body">
             <div class="form-group">
               <label for="exampleInputEmail1">Title</label>
               <input type="text" name="title" class="form-control w-75" id="exampleInputEmail1" placeholder="Post Title">
+              <p class="text-danger">{{ $errors->first('title') }}</p>
             </div>
             <div class="form-group">
               <label for="content">Post</label>
               <textarea name="post" class="form-control w-75" id="content" cols="30" rows="10">
-                                </textarea>
+                  </textarea>
+              <p class="text-danger">{{ $errors->first('post') }}</p>
             </div>
             <div class="form-group">
-              <label for="exampleInputFile">File input</label>
+              <label for="exampleInputFile">Post Image</label>
               <div class="input-group">
                 <div class="custom-file">
-                  <input type="file" class="custom-file-input" id="exampleInputFile">
+                  <input type="file" name="post_image" class="custom-file-input" id="exampleInputFile">
                   <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                 </div>
                 <div class="input-group-append">
                   <span class="input-group-text" id="">Upload</span>
                 </div>
+                <p class="text-danger">{{ $errors->first('post_image') }}</p>
               </div>
             </div>
           </div>
