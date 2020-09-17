@@ -73,10 +73,13 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>
+        <p class="text-center">
+        &copy; Copyright 
+        <strong>
           {{-- <span>{{ setting('site.title') }}</span> --}}
           De Skyballers
         </strong>. All Rights Reserved
+      </p>
       </div>
       <div class="credits">
       </div>

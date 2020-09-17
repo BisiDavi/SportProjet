@@ -43,6 +43,8 @@ figure {
     grid-gap: 15px;
     width: 100%;
     padding-top: 60px;
+    margin-top: -30px;
+    margin-bottom: 30px;
 }
 
 .gallery__item--1 {

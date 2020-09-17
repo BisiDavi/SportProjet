@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use TCG\Voyager\Facades\Voyager;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +18,11 @@ Route::get('/', 'HomeController@index');
 
 Route::get('/about', 'AboutController@index');
 
-Route::get('/about', 'AboutController@index');
+Route::get('/admission', 'AdmissionController@index');
+
+Route::post('/admission', 'AdmissionController@admissionform');
+
+Route::get('/blog', 'BlogController@index');
 
 Route::get('/gallery', 'GalleryController@index');
 
@@ -30,8 +34,8 @@ Route::get('/enroll', 'EnrollController@index');
 
 Route::post('/enroll', 'EnrollController@subscribe');
 
+Route::view('/admin', 'admin.page.index');
 
+Route::view('/create-post', 'admin.post.createpost');
 
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
+Route::post('/create-post', 'PostController@createpost');
