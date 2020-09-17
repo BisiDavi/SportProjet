@@ -22,7 +22,7 @@ Route::get('/admission', 'AdmissionController@index');
 
 Route::post('/admission', 'AdmissionController@admissionform');
 
-Route::get('/blog', 'BlogController@index');
+Route::get('/blog', 'BlogController@getblogpost');
 
 Route::get('/gallery', 'GalleryController@index');
 

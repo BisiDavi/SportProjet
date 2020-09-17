@@ -1,5 +1,8 @@
 @extends('admin.adminlayout')
 
+@section('title')
+    Dashboard
+@endsection
 
 @section('content')
   <!-- Content Wrapper. Contains page content -->

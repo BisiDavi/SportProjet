@@ -14,17 +14,25 @@
         </div>
         <!-- /.card-header -->
         <!-- form start -->
-        <form role="form">
+
+        @if (session()->has('message'))
+          <div class="alert alert-success" role="alert">
+            <strong>Success</strong>
+            <i class="fa fa-check" aria-hidden="true"></i>
+            {{ session()->get('message') }}
+          </div>
+        @endif
+
+        <form action="create-post" method="POST" role="form">
           <div class="card-body">
             <div class="form-group">
               <label for="exampleInputEmail1">Title</label>
-              <input type="text" class="form-control w-75" id="exampleInputEmail1" placeholder="Post Title">
+              <input type="text" name="title" class="form-control w-75" id="exampleInputEmail1" placeholder="Post Title">
             </div>
             <div class="form-group">
-              <label for="content">Content</label>
-              <textarea name="message" class="form-control w-75" placeholder="your post ..." id="content" cols="30"
-                rows="10">
-                                  </textarea>
+              <label for="content">Post</label>
+              <textarea name="post" class="form-control w-75" id="content" cols="30" rows="10">
+                                </textarea>
             </div>
             <div class="form-group">
               <label for="exampleInputFile">File input</label>
@@ -44,6 +52,7 @@
           <div class="card-footer">
             <button type="submit" class="btn btn-primary">Post</button>
           </div>
+          @csrf
         </form>
       </div>
     </div>
