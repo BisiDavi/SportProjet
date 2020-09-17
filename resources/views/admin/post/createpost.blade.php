@@ -33,21 +33,13 @@
             <div class="form-group">
               <label for="content">Post</label>
               <textarea name="post" class="form-control w-75" id="content" cols="30" rows="10">
-                  </textarea>
+                          </textarea>
               <p class="text-danger">{{ $errors->first('post') }}</p>
             </div>
-            <div class="form-group">
+            <div class="form-group d-flex flex-column ">
               <label for="exampleInputFile">Post Image</label>
-              <div class="input-group">
-                <div class="custom-file">
-                  <input type="file" name="post_image" class="custom-file-input" id="exampleInputFile">
-                  <label class="custom-file-label" for="exampleInputFile">Choose file</label>
-                </div>
-                <div class="input-group-append">
-                  <span class="input-group-text" id="">Upload</span>
-                </div>
-                <p class="text-danger">{{ $errors->first('post_image') }}</p>
-              </div>
+              <input type="file" class="py-2" name="post_image">
+              <p class="text-danger">{{ $errors->first('post_image') }}</p>
             </div>
           </div>
           <!-- /.card-body -->

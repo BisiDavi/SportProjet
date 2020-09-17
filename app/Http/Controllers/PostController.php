@@ -2,26 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\NewValidatedPostEvent;
 use App\Post;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-    //
-    public function index()
-    {
-        return view('admin.post.createpost');
-    }
-
     public function createpost()
     {
-
         $post =   Post::create($this->validateRequest());
         
         $this->storeImage($post);
 
         event(new NewValidatedPostEvent($post));
-
 
         return redirect('create-post')->with('message', 'Post Created!');
 
