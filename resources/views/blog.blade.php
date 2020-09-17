@@ -7,7 +7,7 @@
 @section('link')
   <link rel="stylesheet" href="{{ asset('assets/css/blog.css') }}">
 @endsection
-
+ 
 @section('content')
 
   <div class="container-fluid">

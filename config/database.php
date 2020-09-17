@@ -2,17 +2,17 @@
 
 use Illuminate\Support\Str;
 
-// $url = getenv("CLEARDB_DATABASE_URL");
-// $host = "us-cdbr-east-02.cleardb.com";
-// $username = "b90093eddaaa1a";
-// $password = "a8c9fd4b";
-// $database = "heroku_b75eee1d8d374a9";
+$url = getenv("CLEARDB_DATABASE_URL");
+$host = "us-cdbr-east-02.cleardb.com";
+$username = "b90093eddaaa1a";
+$password = "a8c9fd4b";
+$database = "heroku_b75eee1d8d374a9";
 
-$url = "sportproject";
-$host = "127.0.0.1";
-$username = "root";
-$password = "";
-$database = "sportproject";
+// $url = "sportproject";
+// $host = "127.0.0.1";
+// $username = "root";
+// $password = "";
+// $database = "sportproject";
 
 return [
 
@@ -57,7 +57,7 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            // 'url' => $url,
+            'url' => $url,
             'host' => $host,
             'port' => env('DB_PORT', '3306'),
             'database' => $database,
