@@ -7,6 +7,7 @@
   <title>Admin | @yield('title') </title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  @yield('link');
   @include('admin.links.headerlinks');
 </head>
 

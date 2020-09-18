@@ -4,6 +4,23 @@
   Create a Post
 @endsection
 
+@section('link')
+  <script src="https://cdn.tiny.cloud/1/wpqzkbazuc34ol05yl28445rmujahdm2f2c1gb72qzlm3ctw/tinymce/5/tinymce.min.js"
+    referrerpolicy="origin">
+  </script>
+  <script>
+    tinymce.init({
+      selector: '#mytextarea',
+      plugins: 'a11ychecker advcode casechange formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
+      toolbar: 'a11ycheck addcomment showcomments casechange checklist code formatpainter pageembed permanentpen table',
+      toolbar_mode: 'floating',
+      tinycomments_mode: 'embedded',
+      tinycomments_author: 'Author name',
+    });
+
+  </script>
+@endsection
+
 @section('content')
   <div class="container-fluid">
     <div class="row">
@@ -32,8 +49,9 @@
             </div>
             <div class="form-group">
               <label for="content">Post</label>
-              <textarea name="post" class="form-control w-75" id="content" cols="30" rows="10">
-                            </textarea>
+              <textarea id="mytextarea" name="mytextarea" name="post" class="form-control w-75" id="content" cols="30"
+                rows="10">
+                                    </textarea>
               <p class="text-danger">{{ $errors->first('post') }}</p>
             </div>
             <div class="form-group d-flex flex-column ">
