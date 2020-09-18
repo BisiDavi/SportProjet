@@ -1,4 +1,4 @@
-@extends('admin.adminlayout')
+@extends('admin.layout.admin')
 
 @section('title')
   Create a Post
@@ -49,9 +49,7 @@
             </div>
             <div class="form-group">
               <label for="content">Post</label>
-              <textarea id="mytextarea" name="mytextarea" name="post" class="form-control w-75" id="content" cols="30"
-                rows="10">
-                                    </textarea>
+              <textarea id="mytextarea" name="post" class="form-control w-75" id="content" cols="30" rows="10"></textarea>
               <p class="text-danger">{{ $errors->first('post') }}</p>
             </div>
             <div class="form-group d-flex flex-column ">

@@ -20,27 +20,30 @@ Route::get('/', 'IndexController@index');
 Route::get('/about', 'AboutController@index');
 
 Route::get('/admission', 'AdmissionController@index');
-
 Route::post('/admission', 'AdmissionController@admissionform');
+
 
 Route::get('/blog', 'BlogController@getblogpost');
 
 Route::get('/gallery', 'GalleryController@index');
 
-Route::get('/contact', 'ContactController@index');
 
+Route::get('/contact', 'ContactController@index');
 Route::post('/contact', 'ContactController@contactform');
 
 Route::get('/enroll', 'EnrollController@index');
-
 Route::post('/enroll', 'EnrollController@subscribe');
 
-Route::view('/admin', 'admin.page.index');
+// Admin Routes
 
-Route::view('/create-post', 'admin.post.createpost');
+Route::get('/admin', 'AdminController@index');
 
+Route::view('/create-post', 'admin.page.createpost');
 Route::post('/create-post', 'PostController@createpost');
 
+Route::get('/post', 'AdminViewPostController@index');
+
+// Auth routes 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');

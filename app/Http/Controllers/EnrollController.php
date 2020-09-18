@@ -11,7 +11,7 @@ class EnrollController extends Controller
     public function index()
     {
         //
-        return view('enroll');
+        return view('pages.enroll');
     }
 
      public function subscribe()

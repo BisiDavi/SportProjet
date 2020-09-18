@@ -10,7 +10,7 @@ class IndexController extends Controller
     //
      public function index()
     {
-        return view('home1');
+        return view('pages.home1');
     }
 
     public function footercontactform()

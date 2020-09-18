@@ -2,17 +2,17 @@
 
 use Illuminate\Support\Str;
 
-$cldb_url = getenv("CLEARDB_DATABASE_URL");
-$cldb_host = "us-cdbr-east-02.cleardb.com";
-$cldb_username = "b90093eddaaa1a";
-$cldb_password = "a8c9fd4b";
-$cldb_database = "heroku_b75eee1d8d374a9";
+// $cldb_url = getenv("CLEARDB_DATABASE_URL");
+// $cldb_host = "us-cdbr-east-02.cleardb.com";
+// $cldb_username = "b90093eddaaa1a";
+// $cldb_password = "a8c9fd4b";
+// $cldb_database = "heroku_b75eee1d8d374a9";
 
-// $url = "sportproject";
-// $host = "127.0.0.1";
-// $username = "root";
-// $password = "";
-// $database = "sportproject";
+$url = "sportproject";
+$host = "127.0.0.1";
+$username = "root";
+$password = "";
+$database = "sportproject";
 
 return [
 
@@ -57,12 +57,12 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => $cldb_url,
-            'host' => $cldb_host,
+            // 'url' => $url,
+            'host' => $host,
             'port' => env('DB_PORT', '3306'),
-            'database' => $cldb_database,
-            'username' => $cldb_username,
-            'password' => $cldb_password,
+            'database' => $database,
+            'username' => $username,
+            'password' => $password,
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',

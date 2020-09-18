@@ -1,4 +1,8 @@
-@extends('layout')
+@extends('layouts.layout')
+
+@section('title')
+  About us
+@endsection
 
 @section('link')
   <script src="assets/js/accordion.js"></script>

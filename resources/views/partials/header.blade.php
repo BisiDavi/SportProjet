@@ -15,11 +15,11 @@
     <nav class="nav-menu d-none d-lg-block">
       <ul>
         <li class="active"><a href="/about">About</a></li>
-        <li><a href="/admission">Admission</a></li>
+        {{-- <li><a href="/admission">Admission</a></li> --}}
         <li><a href="/blog">Blog / News</a></li>
         <li><a href="/gallery">Gallery</a></li>
         <li><a href="/contact">Contact Us</a></li>
-        <li class="my-btn" role="btn"><a href="/enroll">Join Team</a></li>
+        <li class="my-btn" role="btn"><a href="/admission">Join Team</a></li>
       </ul>
     </nav>
     <!-- end .nav-menu -->

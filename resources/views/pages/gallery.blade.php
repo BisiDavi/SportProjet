@@ -1,7 +1,6 @@
-@extends('layout')
+@extends('layouts.layout')
 
 @section('title', 'Our Gallery')
-
 
 @section('link')
   <link rel="stylesheet" href="assets/css/gallery.css">

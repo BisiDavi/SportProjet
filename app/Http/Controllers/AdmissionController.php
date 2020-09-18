@@ -10,7 +10,7 @@ class AdmissionController extends Controller
     //
     public function index()
     {
-        return view('admission');
+        return view('pages.admission');
     }
 
     public function admissionform()

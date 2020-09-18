@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.layout')
 
 @section('title')
   Home
@@ -16,7 +16,7 @@
 
 @section('content')
 
-  @include('homeslider')
+  @include('partials.homeslider')
 
   <section class="container-fluid" id="main">
     <div class="row about-academy" id="about-academy">
@@ -72,7 +72,7 @@
                 </p>
               </div>
             </div> --}}
-            @include('eventslider')
+            @include('partials.eventslider')
           </div>
         </div>
       </div>
@@ -120,14 +120,14 @@
       {{-- <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 blogpost">
         <div class="card shadow-lg p-3 mb-3 bg-white rounded blog-aside">
           {{--
-                      <div class="section-title">
-                        <h3 class="text-center">Blog</h3>
-                      </div>
-                      <div style="display:grid; grid-template-rows:repeat(4,1fr)" class="blogcontainer">
-                        @foreach ($threePost as $post)
-                          <div id="blogcontent" class="row">
-                            <div class="blog-post">
-                              <a href="/{{ $post->slug }}">
+                            <div class="section-title">
+                              <h3 class="text-center">Blog</h3>
+                            </div>
+                            <div style="display:grid; grid-template-rows:repeat(4,1fr)" class="blogcontainer">
+                              @foreach ($threePost as $post)
+                                <div id="blogcontent" class="row">
+                                  <div class="blog-post">
+                                    <a href="/{{ $post->slug }}">
           <img class="rounded img-fluid float-left p-3" src="{{ Voyager::image($post->image) }}"
             style="width:400px;height:300px">
           <span>

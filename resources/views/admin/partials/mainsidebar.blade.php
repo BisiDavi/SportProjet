@@ -15,7 +15,7 @@
         <p class="img-circle elevation-3 p-2 bg-danger text-white">AD</p>
       </div>
       <div class="info">
-        <a href="#" class="d-block">Welcome Admin</a>
+        <a href="#" class="d-block">Welcome {{ Auth::user()->name }}</a>
       </div>
     </div>
 
@@ -36,6 +36,12 @@
             <p>Post</p>
           </a>
         </li>
+        <li class="nav-item">
+          <a href="/post" class="nav-link">
+            <i class="nav-icon fas fa-edit"></i>
+            <p>View Posts</p>
+          </a>
+        </li>
         <li class="nav-header">EXAMPLES</li>
         <li class="nav-item disabled">
           <a href="pages/calendar.html" class="nav-link">
@@ -45,41 +51,6 @@
               <span class="badge badge-info right">2</span>
             </p>
           </a>
-        </li>
-        <li class="nav-item has-treeview">
-          <a href="#" class="nav-link">
-            <i class="nav-icon far fa-plus-square"></i>
-            <p>
-              Extras
-              <i class="fas fa-angle-left right"></i>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="pages/examples/login.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Login</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/examples/register.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Register</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/examples/forgot-password.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Forgot Password</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="pages/examples/recover-password.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Recover Password</p>
-              </a>
-            </li>
-          </ul>
         </li>
       </ul>
     </nav>
