@@ -55,6 +55,7 @@
  @media all and (min-width: 1000px) {
 	 body .eventslidercontainer .eventslider {
 		 width: 80%;
+		 margin-left:15px;
 		 height: 75%;
 	}
 }

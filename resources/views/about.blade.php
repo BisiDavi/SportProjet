@@ -92,7 +92,7 @@
                 </div>
                 <div id="collapseFive" class="collapse" data-parent="#accordion">
                   <div class="card-body">
-                    <ul class="col-md-8 col-sm-8 col-xs-12">
+                    <ul class="col-lg-12 col-md-12 col-sm col-xs-12">
                       <div class="row">
                         <div class="col">
                           <li>

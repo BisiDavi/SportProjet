@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 
@@ -14,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HomeController@index');
+Route::get('/', 'IndexController@index');
 
 Route::get('/about', 'AboutController@index');
 
@@ -39,3 +40,7 @@ Route::view('/admin', 'admin.page.index');
 Route::view('/create-post', 'admin.post.createpost');
 
 Route::post('/create-post', 'PostController@createpost');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

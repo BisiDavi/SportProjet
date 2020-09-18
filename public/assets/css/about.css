@@ -17,6 +17,28 @@
 }
 
 @media (max-width:768px){
+    .row.about-banner h1 {
+    margin-top: 0px;
+    font-size: 20px;
+    margin-left: -25px;
+}
+    .row.about-banner {
+    margin-top: 15%;
+}
+h2.accordion__items {
+    font-size: 20px;
+}
+h1.accordion__title {
+    font-size: 1.5rem;
+}
+}
+
+.card-body .col-lg-12 .col-md-12 .col-sm .col-xs-12{
+    color: white;
+    padding: 10px;
+}
+
+@media (max-width:768px){
     .about-banner h3 {
     position: absolute;
     color: white;

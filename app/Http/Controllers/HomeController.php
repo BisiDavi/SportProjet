@@ -2,28 +2,27 @@
 
 namespace App\Http\Controllers;
 
-use App\FooterContactform;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    //
-     public function index()
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
     {
-        return view('home');
+        $this->middleware('auth');
     }
 
-    public function footercontactform()
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function index()
     {
-
-        $data = request()->validate([
-            'fullname' => 'required',
-            'contact_email' => 'required|email',
-            'message' => 'required'
-        ]);
-
-        FooterContactform::create($data);
-
-        return redirect('gallery')->with('message', 'Thanks for contacting us.We shall get back to you shortly' );
+        return view('home');
     }
 }
