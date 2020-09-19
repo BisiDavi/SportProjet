@@ -25,3 +25,34 @@ marquee.marquee-text {
     max-height:235px !important;
   }
 }
+
+@media(min-width:769px){
+  .mobile-screen{
+    display:none;    
+  }
+}
+
+@media(max-width:768px){
+  .large-screen{
+    display: none;
+  }
+  .mobile-screen{
+    margin-top: -30px !important;
+    margin-bottom: -50px !important;
+  }
+   
+h3.accordion__content__caption {
+    font-size: 17px !important;
+}
+ul.accordion__content__txt {
+    color: white;
+}
+.services .card-body {
+  padding:10px !important;
+  margin-left: -20px !important;
+  width: 270px !important;
+}
+h2.accordion__items {
+    font-size: 12px !important;
+}
+}
