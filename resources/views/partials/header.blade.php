@@ -15,7 +15,7 @@
     <nav class="nav-menu d-none d-lg-block">
       <ul>
         <li class="active"><a href="/about">About</a></li>
-        {{-- <li><a href="/admission">Admission</a></li> --}}
+        <li><a href="/services">Services</a></li>
         <li><a href="/blog">Blog / News</a></li>
         <li><a href="/gallery">Gallery</a></li>
         <li><a href="/contact">Contact Us</a></li>

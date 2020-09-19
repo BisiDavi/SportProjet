@@ -120,14 +120,14 @@
       {{-- <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 blogpost">
         <div class="card shadow-lg p-3 mb-3 bg-white rounded blog-aside">
           {{--
-                            <div class="section-title">
-                              <h3 class="text-center">Blog</h3>
-                            </div>
-                            <div style="display:grid; grid-template-rows:repeat(4,1fr)" class="blogcontainer">
-                              @foreach ($threePost as $post)
-                                <div id="blogcontent" class="row">
-                                  <div class="blog-post">
-                                    <a href="/{{ $post->slug }}">
+                                <div class="section-title">
+                                  <h3 class="text-center">Blog</h3>
+                                </div>
+                                <div style="display:grid; grid-template-rows:repeat(4,1fr)" class="blogcontainer">
+                                  @foreach ($threePost as $post)
+                                    <div id="blogcontent" class="row">
+                                      <div class="blog-post">
+                                        <a href="/{{ $post->slug }}">
           <img class="rounded img-fluid float-left p-3" src="{{ Voyager::image($post->image) }}"
             style="width:400px;height:300px">
           <span>
@@ -170,12 +170,8 @@
                   <ul class="card-text">
                     <li>Dish out strategies that can help improve quality of life for people of various
                       ages and abilities.</li>
-                    {{-- <li>Bring light to topics such as athletic injury management,
-                      sport and exercise
-                      psychology, anatomy, biomechanics, wellness management strategies and many more.
-                    </li> --}}
                   </ul>
-                  <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a>
+                  <div class="read-more"><a href="/services"><i class="icofont-arrow-right"></i> Read More</a>
                   </div>
                 </div>
               </div>
@@ -193,13 +189,8 @@
                       sportsperson of all ages and levels will have the chance to attain their full
                       potential under the tutelage of passionate, disciplined and certified training
                       crew.</li>
-                    {{-- <li>Our clients/athletes acquire individually streamed training
-                      programs and
-                      sessions that are designed uniquely to enhance their talents, while developing
-                      the skills and techniques of the athlete, group or team across a wide range of
-                      sporting disciplines.</li> --}}
                   </ul>
-                  <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a>
+                  <div class="read-more"><a href="/services"><i class="icofont-arrow-right"></i> Read More</a>
                   </div>
                 </div>
               </div>
@@ -216,13 +207,9 @@
                     <li>Several unique sport festivals are to be organized for various sports, age, sex,
                       regions of the country. These festivals come with our own unique concept and
                       programs.</li>
-                    {{-- <li>We have a sustainable template that we follow which ensures
-                      ha the ultimate goal
-                      of the festival is achieved. We partner with lots of organizations, firms, and
-                      individuals etc. to ensure that each festival is a huge success</li>
-                    --}}
+
                   </ul>
-                  <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a>
+                  <div class="read-more"><a href="/services"><i class="icofont-arrow-right"></i> Read More</a>
                   </div>
                 </div>
               </div>
@@ -242,13 +229,9 @@
                     <li>This is what makes De skyballers international exceptional; we have set up a
                       beautiful and dynamic system that consists of seasoned and passionate
                       professionals that carries out standard and productive athlete management.</li>
-                    {{-- <li>Our team ensures that every athlete grows not just in
-                      skills but in value. We
-                      make all the moves, create the required environment, partnerships and attract
-                      the best of deals to our athletes. We manage each athlete to stand out as a
-                      personal brand that is sell-able anywhere in the world.</li> --}}
+
                   </ul>
-                  <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a>
+                  <div class="read-more"><a href="/services"><i class="icofont-arrow-right"></i> Read More</a>
                   </div>
                 </div>
               </div>
@@ -265,11 +248,9 @@
                     <li>We cover the whole ground in supply and sales of all types of sports materials.
                       We place premium on quality over quantity, we go for the best and that sets us
                       apart. We deliver to our clients even in bulk quantities.</li>
-                    {{-- <li>We of course, partner with the best brands in the world to
-                      deliver on quality
-                      sport materials.</li> --}}
+
                   </ul>
-                  <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a>
+                  <div class="read-more"><a href="/services"><i class="icofont-arrow-right"></i> Read More</a>
                   </div>
                 </div>
               </div>
@@ -287,12 +268,9 @@
                       organize boot camps cities to create a sweet-sweet environment for athletes to
                       be influenced positively, network with big stars in the industry and collaborate
                       effectively to grow.</li>
-                    {{-- <li>Our Lifestyle project is exceptional and plays a key role
-                      in the development
-                      process. Celebrities, stars, big wigs in sports administration within the
-                      country and beyond are all part this initiative.</li> --}}
+
                   </ul>
-                  <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a>
+                  <div class="read-more"><a href="/services"><i class="icofont-arrow-right"></i> Read More</a>
                   </div>
                 </div>
               </div>

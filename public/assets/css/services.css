@@ -1,0 +1,27 @@
+marquee.marquee-text {
+    color: white;
+    margin-top: 72px;
+    background: black;
+}
+
+@media (min-width:1000px){
+  .services .card-body {
+    z-index: 10;
+    background: #fff;
+    height: auto !important;
+    font-size: 1rem;
+    margin-left: -20px;
+    width: 400px !important;
+    border-top: 4px solid #fff;
+    padding: 10px;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.1);
+    margin-top: -60px;
+    transition: 0.3s;
+  }
+  .card{
+    margin-bottom: 0px !important;
+  }
+  #service5 .card-body{
+    max-height:235px !important;
+  }
+}

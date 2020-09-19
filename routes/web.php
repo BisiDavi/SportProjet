@@ -19,6 +19,8 @@ Route::get('/', 'IndexController@index');
 
 Route::get('/about', 'AboutController@index');
 
+Route::view('/services', 'pages.services');
+
 Route::get('/admission', 'AdmissionController@index');
 Route::post('/admission', 'AdmissionController@admissionform');
 
