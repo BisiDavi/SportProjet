@@ -32,6 +32,12 @@ marquee.marquee-text {
   }
 }
 
+@media(min-width:1000px){
+  .container-fluid.mobile-screen.mt-3 {
+    display: none;
+}
+}
+
 @media(max-width:768px){
   .large-screen{
     display: none;
