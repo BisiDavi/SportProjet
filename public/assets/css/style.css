@@ -858,3 +858,10 @@ textarea .message-textarea .form-control {
     font-size: 20px;
 }
 }
+@media (max-width:340px){
+h1.text-light a {
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+}
+}
