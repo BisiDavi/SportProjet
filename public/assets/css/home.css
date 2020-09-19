@@ -74,7 +74,7 @@ padding: 20px;
 /**for screen less than 768px */
 @media screen and (max-width: 768px) {
     div#jssor_1 {
-        margin-top: 7% !important;
+        margin-top: 22% !important;
     }
     .col-lg-4.col-md-4.col-sm-4.col-xs-12.blogpost {
         margin-top: 7% !important;

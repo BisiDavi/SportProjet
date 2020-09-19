@@ -124,14 +124,14 @@
             </mask>
         </defs>
     </svg>
-    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1600px;height:560px;overflow:hidden;visibility:hidden;">
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1600px;height:760px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
             <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="/assets/img/spin.svg" />
         </div>
-        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1600px;height:560px;overflow:hidden;">
-            <div style="background-color:#d3890e;">
-                <img data-u="image" style="opacity:0.8;" data-src="assets/img/sport3.jpg" />
+        <div id="sliderimgcontainer" data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1600px;height:560px;overflow:hidden;">
+            <div id="imgdiv" style="background-color:#d3890e;">
+                <img data-u="image" id="sportimg" style="opacity:0.8;" data-src="assets/img/sport3.jpg" />
                 <div data-ts="flat" data-p="275" data-po="40% 50%" style="left:150px;top:40px;width:800px;height:300px;position:absolute;">
                     <div data-to="50% 50%" data-t="0" style="left:50px;top:520px;width:400px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;">SPORT</div>
                     <div data-to="50% 50%" data-t="1" style="left:50px;top:540px;width:400px;height:100px;position:absolute;opacity:0.5;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;">SPORT</div>
@@ -141,8 +141,8 @@
                     <div data-to="50% 50%" data-t="5" style="left:50px;top:710px;width:700px;height:100px;position:absolute;color:#f0a329;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;letter-spacing:0.5em;">ACADEMY</div>
                 </div>
             </div>
-            <div>
-                <img data-u="image" data-src="assets/img/sport5.png" />
+            <div id="imgdiv">
+                <img data-u="image" id="sportimg"  data-src="assets/img/sport5.png" />
                 <div data-ts="flat" data-p="540" data-po="40% 50%" style="left:0px;top:0px;width:1600px;height:560px;position:absolute;">
                     <div data-to="50% 50%" data-ts="preserve-3d" data-t="6" style="left:350px;top:360px;width:900px;height:500px;position:absolute;">
                         <svg viewbox="0 0 800 60" data-to="50% 50%" width="800" height="60" data-t="7" style="left:0px;top:-70px;display:block;position:absolute;opacity:0;font-family:'Roboto Condensed',sans-serif;font-size:60px;font-weight:700;letter-spacing:0.05em;overflow:visible;">
@@ -157,8 +157,8 @@
                     </div>
                 </div>
             </div>
-            <div style="background-color:#000000;">
-                <img data-u="image" style="opacity:0.8;" data-src="assets/img/sport1.jpg" />
+            <div id="imgdiv" style="background-color:#000000;">
+                <img data-u="image" id="sportimg"  style="opacity:0.8;" data-src="assets/img/sport1.jpg" />
                 <div data-ts="flat" data-p="1080" style="left:0px;top:0px;width:1600px;height:560px;position:absolute;">
                     <svg viewbox="0 0 600 400" data-ts="preserve-3d" width="600" height="400" data-tchd="jssor_1_msk_3" style="left:255px;top:0px;display:block;position:absolute;overflow:visible;">
                         <g mask="url(#jssor_1_msk_3)">
@@ -175,8 +175,8 @@
                     </svg>
                 </div>
             </div>
-            <div>
-                <img data-u="image" data-src="assets/img/sport4.jpg" />
+            <div id="imgdiv">
+                <img data-u="image" id="sportimg"  data-src="assets/img/sport4.jpg" />
                 <div data-ts="flat" data-p="1080" style="left:0px;top:0px;width:1600px;height:560px;position:absolute;">
                     <div data-to="50% 50%" data-t="13" style="left:100px;top:-20px;width:800px;height:200px;position:absolute;opacity:0;">
                         <div style="left:94px;top:35px;width:480px;height:90px;position:absolute;color:rgba(74,217,205,0.5);font-family:'Roboto Condensed',sans-serif;font-size:72px;line-height:1.2;">De SkyBallers</div>
@@ -184,15 +184,15 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <img data-u="image" data-src="assets/img/banner4.jpg" />
+            <div id="imgdiv">
+                <img data-u="image" id="sportimg"  data-src="assets/img/banner4.jpg" />
                 <div data-ts="flat" data-p="1080" style="left:0px;top:0px;width:1600px;height:560px;position:absolute;">
                     <div data-to="50% 50%" data-t="14" style="left:690px;top:140px;width:600px;height:150px;position:absolute;opacity:0;color:red;font-family:Georgia,'Times New Roman',Times,serif;font-size:60px;line-height:1.2;letter-spacing:0.1em;">De SkyBallers<br/>...Live for Sports</div>
                     <img data-to="50% 50%" data-t="15" style="left:780px;top:350px;width:344px;height:157px;position:absolute;opacity:0;max-width:344px;" data-src="assets/img/wine-atlantic-ocean.png" />
                     <img data-to="50% 50%" data-t="16" style="left:1330px;top:8px;width:172px;height:131px;position:absolute;opacity:0;max-width:172px;" data-src="assets/img/wine-badge.png" />
                 </div>
             </div>
-        </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">slider html</a>
+        </div><a data-scale="0" style="display:none;position:absolute;"></a>
         <!-- Bullet Navigator -->
         <div data-u="navigator" class="jssorb132" style="position:absolute;bottom:24px;right:16px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
             <div data-u="prototype" class="i" style="width:12px;height:12px;">

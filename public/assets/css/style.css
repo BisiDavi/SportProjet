@@ -865,3 +865,27 @@ h1.text-light a {
     text-align: center;
 }
 }
+
+@media (min-width:900px){
+    #jssor_1{
+      height:450px !important;  
+    }
+}
+
+@media(max-width:768px){
+   #jssor_1{
+      height:180px !important;  
+    } 
+    img#sportimg {
+    height: 900px !important;   
+    }
+    #imgdiv{
+    height: 900px !important;   
+    }    
+    div#imgdiv div:first-child {
+    height: 960px !important;
+    }
+    div#sliderimgcontainer {
+    height: 900px !important;
+    }
+}
