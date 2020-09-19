@@ -103,7 +103,7 @@ h6,
     border-radius: 50%;
     margin-top: -15px;
     max-height: 68px;
-    box-shadow: 2px 1px 30px black;
+    /* box-shadow: 2px 1px 30px black; */
 }
 
 #main {
@@ -547,7 +547,7 @@ a i.icofont-arrow-right.float-right {
     width: 68px;
     border-radius: 50%;
     margin-top: -30px;
-    box-shadow: 2px 1px 30px black;
+    /* box-shadow: 2px 1px 30px black; */
 }
 
 .logo-bottom h1 .site-title {
@@ -852,10 +852,17 @@ textarea .message-textarea .form-control {
 }
 
 @media (max-width:768px){
+    .section-title h6.text-center {
+    margin-top: -10px;
+    }
     #footer h1 {
     color: white;
     font-weight: bold;
     font-size: 20px;
+}
+.footer-links h1.text-center {
+    margin-top: -30px;
+    margin-bottom: 15px;
 }
 }
 @media (max-width:340px){

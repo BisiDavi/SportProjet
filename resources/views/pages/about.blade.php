@@ -27,18 +27,15 @@
               <h2 class="accordion__items">
                 Who Are We</h2>
               <div class="accordion__content">
-                <h3 class="accordion__content__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-                <p class="accordion__content__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas,
-                  repellat
-                  vel et
-                  neque at asperiores recusandae necessitatibus voluptatum magnam. Odio est, repellendus quas molestias
-                  laborum
-                  itaque perspiciatis perferendis consequuntur quidem.
-                  Non ullam velit eaque accusantium nam, voluptates earum ab, placeat quaerat commodi delectus vel, magni
-                  maxime
-                  itaque dicta consequatur quisquam maiores nisi.</p>
+                <h3 class="accordion__content__caption">
+                  At De SkyBallers, we promote sport activities by adopting international standards
+                </h3>
+                <p class="accordion__content__txt">At De SkyBallers, we promote sports by setting up platforms and
+                  programs that enhances the discovery and harnessing of talents across every age and region while
+                  adopting international best practices We are well-organized and competitive on international stage. We
+                  operates with progressive, modern standard and sustainable policies.</p>
               </div>
-              <h2 class="accordion__items">Student Academy</h2>
+              {{-- <h2 class="accordion__items">Student Academy</h2>
               <div class="accordion__content">
                 <h3 class="accordion__content__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
                 <p class="accordion__content__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas,
@@ -50,18 +47,15 @@
                   Non ullam velit eaque accusantium nam, voluptates earum ab, placeat quaerat commodi delectus vel, magni
                   maxime
                   itaque dicta consequatur quisquam maiores nisi.</p>
-              </div>
+              </div> --}}
               <h2 class="accordion__items">Our Vision</h2>
               <div class="accordion__content">
-                <h3 class="accordion__content__caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-                <p class="accordion__content__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In autem
-                  sapiente
-                  maxime dignissimos voluptatum maiores, id quae temporibus cumque amet omnis, quidem distinctio,
-                  consequatur
-                  nostrum explicabo corrupti sit. Corrupti, qui? Lorem ipsum
-                  dolor sit amet, consectetur adipisicing elit. Doloribus perspiciatis, nemo soluta voluptas quisquam,
-                  fugiat.
-                  Assumenda similique nam, totam voluptate, sed perferendis vero ea a cumque magnam quas. Illum, facere.
+                <h3 class="accordion__content__caption">
+                  To develop Profitable, Well-organized and competitive sport industry
+                </h3>
+                <p class="accordion__content__txt">To have sports industry that is profitable, well-organized and
+                  competitive on international stage and
+                  operates with progressive, modern standard and sustainable policies.
                 </p>
               </div>
               <h2 class="accordion__items">Our Mission</h2>

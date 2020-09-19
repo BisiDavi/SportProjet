@@ -26,12 +26,12 @@
       </div>
     @endif
 
-    <h1 class="mt-5 mb-3">APPLICATION FORM</h1>
+    <h1 class="mt-5 mb-3 text-title">APPLICATION FORM</h1>
     <p>Please fill in the below information and please make sure all information given are very accurate.
     </p>
 
     <div class="form-title">
-      <h3>Personal Information</h3>
+      <h3 class="info">Personal Information</h3>
     </div>
 
     @if (!session()->has('message'))
@@ -139,11 +139,17 @@
     <p class="admission-note">
       Two customized bibs will be prepared for you and the cost of the two is two thousand naira (N2,000) which you
       will pay for and pick on your arrival. You are NOT allowed to exchange bibs because
-      the number on it is what scouts and coaches will use to identify you.<br>
+      the number on it is what scouts and coaches will use to identify you.
+      <br>
+      <br>
       The sum of two thousand two hundred naira (N2,200) will also be paid on arrival for your medical examination. It
-      is compulsory before you are allowed to start playing.<br>
+      is compulsory before you are allowed to start playing.
+      <br>
+      <br>
       Note also to come with a pair of boots, stockings (socks), shin-guards, hand gloves (for goalkeepers), bed
-      sheets and pillowcase.<br>
+      sheets and pillowcase.
+      <br>
+      <br>
       Accommodation is free<br>
       Feeding: pay as you eat, although the price of food will be subsidized.
     </p>

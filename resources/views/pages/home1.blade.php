@@ -41,7 +41,7 @@
               We are well-organized and competitive on international stage.
               We operates with progressive, modern standard and sustainable policies.</p>
 
-            <button class="btn" type="button" href="#"
+            <button class="btn" type="button" href="/about"
               style="color:white;background: #7F2AA7;border: 1px solid #7F2AA7;box-sizing: border-box;">Read
               More</button>
           </div>
@@ -120,14 +120,14 @@
       {{-- <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 blogpost">
         <div class="card shadow-lg p-3 mb-3 bg-white rounded blog-aside">
           {{--
-                                <div class="section-title">
-                                  <h3 class="text-center">Blog</h3>
-                                </div>
-                                <div style="display:grid; grid-template-rows:repeat(4,1fr)" class="blogcontainer">
-                                  @foreach ($threePost as $post)
-                                    <div id="blogcontent" class="row">
-                                      <div class="blog-post">
-                                        <a href="/{{ $post->slug }}">
+                                  <div class="section-title">
+                                    <h3 class="text-center">Blog</h3>
+                                  </div>
+                                  <div style="display:grid; grid-template-rows:repeat(4,1fr)" class="blogcontainer">
+                                    @foreach ($threePost as $post)
+                                      <div id="blogcontent" class="row">
+                                        <div class="blog-post">
+                                          <a href="/{{ $post->slug }}">
           <img class="rounded img-fluid float-left p-3" src="{{ Voyager::image($post->image) }}"
             style="width:400px;height:300px">
           <span>
@@ -151,7 +151,7 @@
   <section id="services" class="services section-bg">
     <div class="container">
       <div class="section-title">
-        <h3 class="text-center m-3 p-2">Services</h3>
+        <h3 class="text-center p-2">Services</h3>
         <h4 class="text-center">CONSULTANCY SERVICES</h4>
         <p class="text-center">We offer all round consultancy services in sports and sports related matters.
         </p>
