@@ -40,10 +40,12 @@ Route::post('/enroll', 'EnrollController@subscribe');
 
 Route::get('/admin', 'AdminController@index');
 
-Route::view('/create-post', 'admin.page.createpost');
-Route::post('/create-post', 'PostController@createpost');
+Route::get('/post', 'PostController@index');
+Route::get('/post/create', 'PostController@create');
+Route::post('/post', 'PostController@store');
+Route::get('/post/{title}', 'PostController@show');
 
-Route::get('/post', 'AdminViewPostController@index');
+// Route::get('/post', 'AdminViewPostController@index');
 
 // Auth routes 
 Auth::routes();

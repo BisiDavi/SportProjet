@@ -8,7 +8,19 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-    public function createpost()
+    public function index()
+    {
+        $posts = Post::all();
+        return view('admin.page.post.index', compact('posts'));
+    }
+
+    public function create()
+    {
+        return view('admin.page.post.create');
+    }
+
+
+    public function store()
     {
         $post =   Post::create($this->validateRequest());
         
@@ -16,8 +28,15 @@ class PostController extends Controller
 
         event(new NewValidatedPostEvent($post));
 
-        return redirect('create-post')->with('message', 'Post Created!');
+        return redirect('admin.page.post.create')->with('message', 'Post Created!');
 
+    }
+
+    public function show($title)
+    {
+        $post = Post::find($title);
+
+        return view('admin.page.post.show', compact('post'));
     }
 
     private function validateRequest()

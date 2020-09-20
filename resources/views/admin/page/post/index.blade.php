@@ -51,8 +51,13 @@
                         <td>{{ $post->id }}</td>
                         <td>Admin</td>
                         <td>{{ $post->created_at }}</td>
-                        <td><span class="tag tag-success">
-                            {{ $post->title }}</span></td>
+                        <td>
+                          <a href="/post/{{ $post->title }}">
+                            <span class="tag tag-success">
+                              {{ $post->title }}
+                            </span>
+                          </a>
+                        </td>
                         <td>
                           <button class="btn btn-primary">
                             Edit
