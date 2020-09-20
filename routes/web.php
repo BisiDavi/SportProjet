@@ -43,7 +43,7 @@ Route::get('/admin', 'AdminController@index');
 Route::get('/post', 'PostController@index');
 Route::get('/post/create', 'PostController@create');
 Route::post('/post', 'PostController@store');
-Route::get('/post/{title}', 'PostController@show');
+Route::get('/post/{posts}', 'PostController@show');
 
 // Route::get('/post', 'AdminViewPostController@index');
 

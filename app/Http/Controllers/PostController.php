@@ -32,10 +32,9 @@ class PostController extends Controller
 
     }
 
-    public function show($post_id)
+    public function show(Post $posts)
     {
-        $posts = Post::find($post_id);
-
+        // $posts = Post::where('id', $post_id)->firstOrFail();
         return view('admin.page.post.show', compact('posts'));
     }
 
