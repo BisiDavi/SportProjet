@@ -35,7 +35,7 @@
     </div>
 
     @if (!session()->has('message'))
-      <form class="php-email-form" action="admission" method="POST">
+      <form class="php-email-form" action="/admission" method="POST">
         <div class="form-row align-items-stretch aos-init aos-animate">
           <div class="form-group col-md-6">
             <div class="d-block">

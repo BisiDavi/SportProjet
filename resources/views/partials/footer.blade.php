@@ -33,16 +33,16 @@
             </ul>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 footer-links">
-            @if (session()->has('message'))
+            @if (session()->has('contactform_message'))
               <div class="alert alert-success">
                 <strong>Success</strong>
                 <i class="fa fa-check" aria-hidden="true"></i>
-                {{ session()->get('message') }}
+                {{ session()->get('contactform_message') }}
               </div>
             @endif
             <h1 class="text-center">Contact De Skyballers</h1>
 
-            <form action="gallery" method="POST">
+            <form action="/gallery" method="POST">
               <div class="row">
                 <div class="form-group col-md-6 col-sm-6">
                   <input type="text" name="full_name" class="form-control" placeholder="Fullname">
@@ -74,12 +74,12 @@
     <div class="container">
       <div class="copyright">
         <p class="text-center">
-        &copy; Copyright 
-        <strong>
-          {{-- <span>{{ setting('site.title') }}</span> --}}
-          De Skyballers
-        </strong>. All Rights Reserved
-      </p>
+          &copy; Copyright
+          <strong>
+            {{-- <span>{{ setting('site.title') }}</span> --}}
+            De Skyballers
+          </strong>. All Rights Reserved
+        </p>
       </div>
       <div class="credits">
       </div>

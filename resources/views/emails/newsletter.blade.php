@@ -1,12 +1,14 @@
 @component('mail::message')
-  # Welcome to our Newsletter
+  #Welcome to De Skyballers
 
-  Thanks for subscribing to our newsletter. Welcome on board once again.
+  <p>Thanks {{ $data['surname'] }} {{ $data['other_name'] }} for showing interest in joining De Skyballers Academy</p>
 
-  @component('mail::button', ['url' => ''])
-    Button Text
-  @endcomponent
+  <p>We shall get back to you shortly.</p>
+
+  {{-- @component('mail::button', ['url' => ''])
+  Button Text
+  @endcomponent --}}
 
   Thanks,<br>
-  {{ config('app.name') }}
+  <strong>De Skyballers</strong>
 @endcomponent

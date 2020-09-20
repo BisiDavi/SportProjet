@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Admission;
+use App\Mail\NewsletterMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class AdmissionController extends Controller
 {
@@ -29,6 +31,10 @@ class AdmissionController extends Controller
         
 
         Admission::create($data);
+
+        // dd(request('email'));
+
+        Mail::to("oludavidconnect@gmail.com")->send(new NewsletterMail($data));
 
         return redirect('admission')->with('message', 'Thanks for your application, We will be in touch.');
     }

@@ -28,7 +28,7 @@ Route::post('/admission', 'AdmissionController@admissionform');
 Route::get('/blog', 'BlogController@getblogpost');
 
 Route::get('/gallery', 'GalleryController@index');
-
+Route::post('/gallery', 'IndexController@footercontactform');
 
 Route::get('/contact', 'ContactController@index');
 Route::post('/contact', 'ContactController@contactform');

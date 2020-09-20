@@ -17,13 +17,13 @@ class IndexController extends Controller
     {
 
         $data = request()->validate([
-            'fullname' => 'required',
+            'full_name' => 'required',
             'contact_email' => 'required|email',
-            'message' => 'required'
+            'user_message' => 'required'
         ]);
 
         FooterContactform::create($data);
 
-        return redirect('gallery')->with('message', 'Thanks for contacting us.We shall get back to you shortly' );
+        return redirect('gallery')->with('contactform_message', 'Thanks for contacting us.We shall get back to you shortly' );
     }
 }

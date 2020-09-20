@@ -283,7 +283,7 @@
   <!-- End Services Section -->
 
 
-  <!-- ======= Clients Section ======= -->
+  {{-- <!-- ======= Clients Section ======= -->
   <section id="clients" class="clients section-bg">
     <div class="container">
       <div class="section-title" data-aos="fade-up">
@@ -297,7 +297,7 @@
         <img width="100px" src="{{ asset('assets/img/fifa.png') }}" alt="">
       </div>
     </div>
-  </section>
+  </section> --}}
   <!-- End Clients Section -->
   </div>
 @endsection

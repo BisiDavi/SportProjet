@@ -42,7 +42,7 @@
                 <i class="ion ion-person-add"></i>
               </div>
               <a href="/create-post" class="small-box-footer ml-2">Create a new Post<i
-                  class="fas fa-arrow-circle-right"></i></a>
+                  class="fas fa-arrow-circle-right ml-2"></i></a>
             </div>
           </div>
           <div class="col-lg-3 col-6 pull-left">

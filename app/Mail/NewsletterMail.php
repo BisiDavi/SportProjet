@@ -10,15 +10,17 @@ use Illuminate\Queue\SerializesModels;
 class NewsletterMail extends Mailable
 {
     use Queueable, SerializesModels;
+    public $data;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($data)
     {
         //
+        $this ->data = $data;
     }
 
     /**
@@ -28,6 +30,7 @@ class NewsletterMail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.newsletter');
+        return $this->from('oludavidconnect@gmail.com')
+                ->markdown('emails.newsletter');
     }
 }
