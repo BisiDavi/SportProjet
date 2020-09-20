@@ -32,11 +32,11 @@ class PostController extends Controller
 
     }
 
-    public function show($title)
+    public function show($post_id)
     {
-        $post = Post::find($title);
+        $posts = Post::find($post_id);
 
-        return view('admin.page.post.show', compact('post'));
+        return view('admin.page.post.show', compact('posts'));
     }
 
     private function validateRequest()

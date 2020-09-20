@@ -52,7 +52,7 @@
                         <td>Admin</td>
                         <td>{{ $post->created_at }}</td>
                         <td>
-                          <a href="/post/{{ $post->title }}">
+                          <a href="/post/{{ $post->id }}">
                             <span class="tag tag-success">
                               {{ $post->title }}
                             </span>
