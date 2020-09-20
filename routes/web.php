@@ -44,6 +44,9 @@ Route::get('/post', 'PostController@index');
 Route::get('/post/create', 'PostController@create');
 Route::post('/post', 'PostController@store');
 Route::get('/post/{posts}', 'PostController@show');
+Route::get('/post/{posts}/edit', 'PostController@edit');
+Route::patch('/post/{posts}', 'PostController@update');
+Route::delete('/post/{posts}', 'PostController@destroy');
 
 // Route::get('/post', 'AdminViewPostController@index');
 

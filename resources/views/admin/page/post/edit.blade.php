@@ -1,8 +1,7 @@
 @extends('admin.layout.admin')
 
-@section('title')
-  Create a Post
-@endsection
+@section('title', 'Edit Post', ". {{ $posts->title }} .")
+
 
 @section('link')
   <script src="https://cdn.tiny.cloud/1/wpqzkbazuc34ol05yl28445rmujahdm2f2c1gb72qzlm3ctw/tinymce/5/tinymce.min.js"
@@ -27,7 +26,7 @@
       <div class="col-3"></div>
       <div class="col-9">
         <div class="card-header">
-          <h3 class="card-title">Create Post</h3>
+          <h3 class="card-title">Edit Post {{ $posts->title }}</h3>
         </div>
         <!-- /.card-header -->
         <!-- form start -->
@@ -40,9 +39,9 @@
           </div>
         @endif
 
-        <form action="/post" method="POST" role="form" enctype="multipart/form-data">
+        <form action="/post/{{ $posts->id }}" method="POST" role="form" enctype="multipart/form-data">
+          @method('PATCH')
           @include('admin.page.post.form')
-          <!-- /.card-body -->
 
           <div class="card-footer">
             <button type="submit" class="btn btn-primary">Post</button>

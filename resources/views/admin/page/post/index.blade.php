@@ -10,7 +10,7 @@
       <div class="col-3"></div>
       <div class="col-9">
         <div class="row row mr-5 mt-3">
-          <a href="/create-post">
+          <a href="/post/create">
             <button class="createpost bg-primary float-right p-2 text-white mb-5 d-flex">
               <i class="fas fa-plus mt-1 mr-2"></i>
               Create New Post
@@ -59,14 +59,20 @@
                           </a>
                         </td>
                         <td>
-                          <button class="btn btn-primary">
-                            Edit
-                          </button>
+                          <a href="/post/{{ $post->id }}/edit">
+                            <button class="btn btn-primary">
+                              Edit
+                            </button>
+                          </a>
                         </td>
                         <td>
-                          <button class="btn btn-danger">
-                            Delete
-                          </button>
+                          <form class="form" method="POST" action="/post/{{ $post->id }}">
+                            @method('DELETE')
+                            @csrf
+                            <button type="submit" class="btn btn-danger">
+                              Delete
+                            </button>
+                          </form>
                         </td>
                       </tr>
                     @endforeach

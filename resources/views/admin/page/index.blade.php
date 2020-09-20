@@ -41,7 +41,7 @@
               <div class="icon">
                 <i class="ion ion-person-add"></i>
               </div>
-              <a href="/create-post" class="small-box-footer ml-2">Create a new Post<i
+              <a href="/post" class="small-box-footer ml-2">Create a new Post<i
                   class="fas fa-arrow-circle-right ml-2"></i></a>
             </div>
           </div>
