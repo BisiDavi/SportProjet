@@ -7,7 +7,7 @@
 @section('link')
   <script src="assets/js/accordion.js"></script>
   <link rel="stylesheet" href="assets/css/aboutaccordion.css">
-  <link rel="stylesheet" href="{{ asset('assets/css/about.css') }}">
+  <link rel="stylesheet" href="assets/css/about.css">
 @endsection
 
 @section('content')
@@ -15,7 +15,7 @@
   <div class="aboutus">
     <div class="container-fluid">
       <div class="row about-banner">
-        <img src="{{ asset('assets/img/banner.png') }}" class="top-banner" alt="banner" style="width:100%">
+        <img src="assets/img/banner.png" class="top-banner" alt="banner" style="width:100%">
         <h1 class="text-center">About De Skyballers</h1>
       </div>
 

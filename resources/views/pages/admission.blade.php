@@ -4,8 +4,7 @@
 @section('title', 'Admission')
 
 @section('link')
-  <link rel="stylesheet" href="{{ asset('assets/css/admission.css') }}">
-  <link rel="stylesheet" href="{{ asset('assets/css/admissionModal.css') }}">
+  <link rel="stylesheet" href="assets/css/admission.css">
 @endsection
 
 @section('content')
