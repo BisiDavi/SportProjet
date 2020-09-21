@@ -54,7 +54,8 @@ return [
 
     'url' => env('APP_URL', 'https://sportprojet.herokuapp.com'),
 
-    'asset_url' => env('ASSET_URL', null),
+    // 'asset_url' => env('ASSET_URL', null),
+    'asset_url' => env('https://sportprojet.herokuapp.com', null),
 
     /*
     |--------------------------------------------------------------------------
