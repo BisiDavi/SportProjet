@@ -16,7 +16,7 @@
 
       <h3 class="text-center text-white">Blog</h3>
 
-      <div class="container mt-5 mb-5">
+      <div class="post container mt-5 mb-5">
         <div class="row">
           @foreach ($posts as $post)
             <div class="col-md-3">
@@ -25,6 +25,7 @@
 
                 <span>
                   <strong>
+                    <a href="/blog/{{ $post->title }}"></a>
                     {{ $post->title }}
                   </strong>
                 </span>

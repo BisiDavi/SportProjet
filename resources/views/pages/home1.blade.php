@@ -8,9 +8,6 @@
   <link rel="stylesheet" href="assets/css/home.css">
   <link rel="stylesheet" href="assets/css/home-slider.css">
   <link rel="stylesheet" href="assets/css/preloader.css">
-  {{--
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  --}}
   <link rel="stylesheet" href="assets/css/eventslider.css">
 @endsection
 
@@ -29,7 +26,6 @@
             <img class="img-background" src="{{ asset('assets/img/Rectangle 16.png') }}">
             <img class="volleyball" src="{{ asset('assets/img/about 1.png') }}">
           </div>
-
           <div class="academy-text">
             <p>
               At De SkyBallers, we promote sports by setting up platforms and programs that enhances the
@@ -48,30 +44,10 @@
         </div>
 
         <div class="section-title text-center">
-          <h3 class="text-center m-3 p-2">Upcoming Events</h3>
+          <h3 class="text-center">Upcoming Events</h3>
         </div>
         <div class="events container">
-          <div class="row d-flex mx-auto">
-            {{-- <div class="autoplay">
-              <div class="d-block">
-                <img src="assets/img/training.jpg" alt="">
-                <p class="d-block">
-                  <strong class="text-center">Date: November 10</strong>
-                </p>
-              </div>
-              <div class="d-block">
-                <img src="assets/img/upcoming_event.jpg" alt="">
-                <p class="d-block">
-                  <strong class="text-center">Date: Upcoming</strong>
-                </p>
-              </div>
-              <div class="d-block">
-                <img src="assets/img/malefitness.jpg" alt="">
-                <p class="d-block">
-                  <strong class="text-center">Date: Upcoming</strong>
-                </p>
-              </div>
-            </div> --}}
+          <div class="row d-flex mx-auto">           
             @include('partials.eventslider')
           </div>
         </div>
@@ -81,75 +57,35 @@
           <div class="section-title">
             <h3 class="text-center">Blog</h3>
           </div>
-          <div id="blogcontent" class="row">
-            <div class="d-flex blog-post">
-              <img class="rounded img-fluid float-left p-3" src="assets/img/Rectangle 21.png" />
-              <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports
-                college
-                for boys and girls. It combines education with sports along with a special focus on football development
-              </p>
+          @foreach ($posts as $post)
+            <div id="blogcontent" class="row">
+              <div class="blog-post">
+                <img class="rounded img-fluid" src="storage/{{ $post->post_image }}" />
+                <div class="posttitle">
+                  <p>
+                   <a href="/blog">
+                     {{ $post->title }}
+                    </a>
+                  </p>
+                </div>
+                <div class="postlink">
+                  <a href="/blog">
+                    <i class="icofont-arrow-right float-right"></i>
+                    Read More
+                  </a>
+                </div>
+              </div>
             </div>
-            <a href="#"><i class="icofont-arrow-right float-right"></i>Read More</a>
-          </div>
-          <div class="border border-gray m-3"></div>
-
-          <div data-aos="fade-up" id="blogcontent" class="row d-flex">
-            <div class="d-flex blog-post">
-              <img class="rounded float-left p-3" src="assets/img/Rectangle 21.png" />
-              <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports
-                college
-                for boys and girls. It combines education with sports along with a special focus on football development
-              </p>
-            </div>
-            <a href="#"><i class="icofont-arrow-right float-right"></i>Read More</a>
-          </div>
-          <div class="border border-gray m-3"></div>
-
-          <div data-aos="fade-up" id="blogcontent" class="row d-flex post-3">
-            <div class="d-flex blog-post">
-              <img class="rounded float-left p-3" src="assets/img/Rectangle 21.png" />
-              <p style="width:70%;padding:2px;">Authentic African Sports Academy is an independent residential sports
-                college
-                for boys and girls. It combines education with sports along with a special focus on football development
-              </p>
-            </div>
-            <a href="#"><i class="icofont-arrow-right float-right"></i>Read More</a>
-          </div>
+          @endforeach
         </div>
-      </div>
-      {{-- <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 blogpost">
-        <div class="card shadow-lg p-3 mb-3 bg-white rounded blog-aside">
-          {{--
-                                  <div class="section-title">
-                                    <h3 class="text-center">Blog</h3>
-                                  </div>
-                                  <div style="display:grid; grid-template-rows:repeat(4,1fr)" class="blogcontainer">
-                                    @foreach ($threePost as $post)
-                                      <div id="blogcontent" class="row">
-                                        <div class="blog-post">
-                                          <a href="/{{ $post->slug }}">
-          <img class="rounded img-fluid float-left p-3" src="{{ Voyager::image($post->image) }}"
-            style="width:400px;height:300px">
-          <span>
-            <h3 class="blogPostTitle text-center m-2">
-              {{ $post->title }}
-            </h3>
-          </span>
-          </a>
-        </div>
-      </div>
-      @endforeach
-    </div>
-    --}}
-    {{--
-    </div> --}}
-
+      </div>    
+    </div>    
   </section>
 
 
   <!-- ======= Services Section ======= -->
   <section id="services" class="services section-bg">
-    <div class="container">
+    <div class="container-fluid">
       <div class="section-title">
         <h3 class="text-center p-2">Services</h3>
         <h4 class="text-center">CONSULTANCY SERVICES</h4>

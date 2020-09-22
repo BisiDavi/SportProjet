@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\FooterContactform;
+use App\Post;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller
@@ -10,7 +11,9 @@ class IndexController extends Controller
     //
      public function index()
     {
-        return view('pages.home1');
+        $posts = Post::all();
+
+        return view('pages.home1', compact('posts'));
     }
 
     public function footercontactform()

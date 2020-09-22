@@ -14,4 +14,10 @@ class BlogController extends Controller
 
         return view('pages.blog', compact('posts'));
     }
+
+    public function post()
+    {
+        $posts = Post::all();
+        return view('pages.blogpost', compact('posts'));
+    }
 }

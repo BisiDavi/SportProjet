@@ -1,26 +1,25 @@
 @extends('layouts.layout')
 
-@section('title', 'Blog')
+@section('title', '{{ $posts->title }}')
 
 
 @section('content')
-  <div class="container mt-4">
-    <div class="row">
-      <div class="d-flex mt-5">
-        @foreach ($posts as $post)
-          <div class="blogpost col-md-3">
-            <a href="/{{ $post->slug }}">
-              <img src="{{ Voyager::image($post->image) }}" style="width:100%">
-              <span>
-                <h3 class="text-center m-2">
-                  {{ $post->title }}
-                </h3>
-              </span>
-            </a>
-          </div>
-        @endforeach
-      </div>
+<div class="container-fluid">
+  <img src="{{ asset('assets/img/banner.png') }}" class="top-banner" alt="banner" style="width:100%">
+
+      <h3 class="text-center text-white">{{ $posts->title }}</h3>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-3">
+      <img src="{{ $posts->image) }}" style="width:100%">
+    </div>
+    <div class="blogpost col-lg-8 col-md-8 col-sm-9">
+      <h3 class="text-center m-2">
+        {{ $posts->title }}
+      </h3>
+      <p>{{ $posts->post }}</p>
     </div>
   </div>
-
+</div>
 @endsection

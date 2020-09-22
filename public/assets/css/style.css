@@ -229,12 +229,6 @@ a i.icofont-arrow-right.float-right {
     position: relative;
 }
 
-#blogcontent a {
-    position: absolute;
-    right: 30px;
-    bottom: 18px;
-}
-
 .nav-menu .drop-down > a:after {
     content: "\ea99";
     font-family: IcoFont;
@@ -244,6 +238,27 @@ a i.icofont-arrow-right.float-right {
 .nav-menu .drop-down .drop-down ul {
     top: 0;
     left: calc(100% - 30px);
+}
+
+@media (min-width: 1000px) {
+    .section-title.text-center {
+        margin-top: 30px;
+    }
+    #form #row {
+        padding: 0 !important;
+    }
+    #footer .row {
+        padding: 0px 30px !important;
+    }
+    section#services {
+        margin-top: -150px;
+        margin-bottom: -30px;
+    }
+    .row.servicesrow .card-body {
+        height: 320px;
+        width: 100% !important;
+        margin-left: 0px !important;
+    }
 }
 
 .nav-menu .drop-down .drop-down:hover > ul {
@@ -635,7 +650,7 @@ a i.icofont-arrow-right.float-right {
 }
 
 #footer .footer-top {
-    padding: 60px 0 30px 0;
+    padding: 30px 0 20px 0;
     background: #fff;
 }
 
@@ -817,24 +832,75 @@ textarea .message-textarea .form-control {
 
 #blogcontent {
     position: relative;
-    height: 300px;
-    width: 370px;
     margin: auto;
+    margin-bottom: 18px;
 }
 
-#blogcontent a {
-    position: none !important;
-    right: none !important;
-    bottom: none !important;
+.posttitle a {
+    color: white;
+}
+
+.postlink {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.postlink a {
+    color: white;
+}
+
+.posttitle a:hover {
+    color: red;
 }
 
 .col-lg-4.col-md-4.col-sm-4.col-xs-12.blogpost {
-    max-width: 375px !important;
+    max-width: 300px !important;
     position: absolute;
     right: 20px;
     margin: 0;
     top: 550px;
     padding: 0;
+    border-radius: 15px !important;
+}
+
+.blog-aside .section-title {
+    margin-top: -5px;
+}
+
+.blog-post img.rounded.img-fluid.float-left.p-3 {
+    width: 350px !important;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.d-flex.blog-post {
+    position: relative;
+}
+
+.posttitle {
+    position: absolute;
+    top: 80px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 100%;
+}
+
+.blog-post p {
+    color: white !important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 1 !important;
+}
+
+.blog-post img.rounded.img-fluid {
+    width: 270px;
+    height: 200px;
 }
 
 .blogPostTitle {

@@ -7,3 +7,12 @@
     top: 120px;
     left: 35%;
 }
+
+.post .col-md-3 {
+    text-align: center;
+}
+
+.post .col-md-3 img {
+    height: 200px;
+    width: 300px !important;
+}

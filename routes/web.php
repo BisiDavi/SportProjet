@@ -24,8 +24,8 @@ Route::view('/services', 'pages.services');
 Route::get('/admission', 'AdmissionController@index');
 Route::post('/admission', 'AdmissionController@admissionform');
 
-
 Route::get('/blog', 'BlogController@getblogpost');
+Route::get('/blog/{{ $posts->title }}', 'BlogController@post');
 
 Route::get('/gallery', 'GalleryController@index');
 Route::post('/gallery', 'IndexController@footercontactform');
