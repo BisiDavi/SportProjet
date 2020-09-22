@@ -11,7 +11,7 @@ class IndexController extends Controller
     //
      public function index()
     {
-        $posts = Post::all();
+        $posts = Post::latest()->take(3)->get();
 
         return view('pages.home1', compact('posts'));
     }
