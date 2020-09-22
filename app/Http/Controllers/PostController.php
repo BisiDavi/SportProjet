@@ -21,12 +21,15 @@ class PostController extends Controller
     }
 
 
-    public function store()
+    public function store(Request $request)
     {
-        $post = Post::create($this->validateRequest());
-        
-        $this->storeImage($post);
+        request()->validate([
+            'post_image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+        ]);
+        $imageName = time(). '.' .$request->post_image->extension();
+        $request->post_image->move(public_path('images'), $imageName);
 
+        $post = Post::create($this->validateRequest());
         event(new NewValidatedPostEvent($post));
 
         return redirect('/post')->with('message', 'Post Created!');
@@ -62,19 +65,20 @@ class PostController extends Controller
     {
         $validatedData =  request()->validate([
             'title' => 'required',
-            'post' => 'required',
-            'post_image' => 'required|file|image|max:5000'
+            'post' => 'required',            
         ]);
 
         return $validatedData;
     }
 
-    private function storeImage($post)
+    private function storeImage(Request $request)
     {
-        if(request()->has('post_image')){
-            $post-> update([
-                'post_image' => request()->post_image->store('uploads', 'public')
-            ]);
+        if($request()->has('post_image')){
+            $imageName = time(). '.' .$request->post_image->extension();
+            $request->post_image->move(public_path('images'), $imageName);
+            return back()
+            ->with('success','You have successfully upload image.')
+            ->with('image',$imageName);
         }
     }
 }
