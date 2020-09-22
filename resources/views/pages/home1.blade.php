@@ -60,7 +60,7 @@
           @foreach ($posts as $post)
             <div id="blogcontent" class="row">
               <div class="blog-post">
-                <img class="rounded img-fluid" src="images/{{ Sesssion::get('post_image') }}" />
+                <img class="rounded img-fluid" src="images/{{ Session::get('post_image') }}" />
                 <div class="posttitle">
                   <p>
                    <a href="/blog">
